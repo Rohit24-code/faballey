@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    font-family: 'Lato';
+    color: #323232;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+.mainbox{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.photos
+    {
+    float: left;
+    width: 65%;
+}
+.prodRight{
+    float: right;
+    width: 33%;
+    padding-top: 2px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 75px;
+}
+#kkk{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    float: left;
+}
+.sliderBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    margin: 0;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.sliderBox li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.sliderBox li img {
+    height: auto;
+}
+.sliderBox li img {
+    width: 100%;
+    display: block;
+}
+img {
+    max-width: 100%;
+    border: none;
+}
+.prodRight h2,.prodRight h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: none;
+}
+h1, h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.prodRight h4 {
+    margin-top: 10px;
+    font-family: 'Lato',sans-serif;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+.prodRight h4 span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f00;
+}
+
+.prodRight p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: 'Lato',sans-serif;
+    color: #999;
+}
+.prodSizeguide{
+margin-top: 20px;
+
+font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.sizebox{
+width:60%; 
+height: auto;
+display: flex;
+justify-content: space-between;
+
+}
+.SIZE{
+border:1px solid grey;
+width: 19%;
+text-align: center;
+margin-top: 5px;
+
+
+}
+.addtobag{
+width: 100%;
+margin-top: 25px;
+display: inline-block;
+height: 70px;
+}
+.btn{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    background: #fc6486;
+    display: table-cell;
+    width: 55%;
+    letter-spacing: 1px;
+    padding: 18px 0;
+    float: left;  
+}
+a {
+    color: #323232;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+.fav{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    display: table-cell;
+    letter-spacing: 1px;
+    padding: 17px 10px;
+    border: 1px solid #dcdcdc;
+    float: left;
+    width: 42%;
+    box-sizing: border-box;
+    margin-left: 3%;
+    white-space: nowrap;
+}
+.offers{
+    margin-top: 15px;
+    border: 1px solid #dcdcdc;
+    padding: 15px 15px 5px 15px;
+}
+.offers h6{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.bestoferBox {
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 0;
+   
+}
+.bestoferBox h5{
+   font-size: 20px;
+}
+.bestoferBox p{
+    font-size: 15px;
+}
+.pincodebox {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+}
+.pincodebox h5{
+    font-size: 24px;
+}
+.pincodetext p{
+font-size: 15px;
+}
+.pincodeinp {
+    position: relative;
+    margin-top: 15px;
+}
+.pincodeinp input[type="text"] {
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.pincodeinp span {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    cursor: pointer;
+    color: #fc6486;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="mainbox">
+    <div class="photos">
+        <div id="kkk">
+            <ul class="sliderBox">
+             <li class="zoomli">
+                <a href="/zoom/?_d=36834&amp;_f=faballey" class="ProductPopupbox" data-image="https://img.faballey.com/images/Product/TOP05069Z/d3.jpg">
+                <img class="lazySlider" src="https://img.faballey.com/images/Product/TOP05069Z/d3.jpg" data-original="https://img.faballey.com/images/Product/TOP05069Z/d3.jpg" alt="Olive Solid Belted Blouse" width="477" height="681" style="">
+            </a></li>
+            <li class="zoomli"><a href="/zoom/?_d=36834&amp;_f=faballey" class="ProductPopupbox" data-image="https://img.faballey.com/images/Product/TOP05069Z/d4.jpg">
+             <img class="lazySlider" src="https://img.faballey.com/images/Product/TOP05069Z/d4.jpg" data-original="https://img.faballey.com/images/Product/TOP05069Z/d4.jpg" alt="Olive Solid Belted Blouse" width="477" height="681" style="">
+            </a></li>
+            <li class="zoomli">
+            <a href="/zoom/?_d=36834&amp;_f=faballey" class="ProductPopupbox" data-image="https://img.faballey.com/images/Product/TOP05069Z/d5.jpg"> 
+            <img class="lazySlider" src="https://img.faballey.com/images/Product/TOP05069Z/d5.jpg" data-original="https://img.faballey.com/images/Product/TOP05069Z/d5.jpg" alt="Olive Solid Belted Blouse" width="477" height="681" style="">
+        </a></li>
+        <li class="zoomli">
+        <a href="/zoom/?_d=36834&amp;_f=faballey" class="ProductPopupbox" data-image="https://img.faballey.com/images/Product/TOP05069Z/d7.jpg"> 
+        <img class="lazySlider" src="https://img.faballey.com/images/Product/TOP05069Z/d7.jpg" data-original="https://img.faballey.com/images/Product/TOP05069Z/d7.jpg" alt="Olive Solid Belted Blouse" width="477" height="681" style="">
+    </a></li>
+    <li class="zoomli">
+    <a href="/zoom/?_d=36834&amp;_f=faballey" class="ProductPopupbox" data-image="https://img.faballey.com/images/Product/TOP05069Z/d8.jpg"> 
+        <img class="lazySlider" src="https://img.faballey.com/images/Product/TOP05069Z/d8.jpg" data-original="https://img.faballey.com/images/Product/TOP05069Z/d8.jpg" alt="Olive Solid Belted Blouse" width="477" height="681" style="">
+</a>
+</li>
+</ul>
+        </div>
+    </div>
+    <div class="prodRight">
+<h1>Olive Solid Belted Blouse</h1>
+<h4 style="display:inline-block">
+<span style="text-decoration:line-through;color:#000">
+<i class="fal fa-rupee-sign"></i> ₹1200</span> <span style="color:#fc6486">
+<i class="fal fa-rupee-sign"></i> ₹600</span>
+<span style="font-size:11px;color:#000;float:right;margin:4px 0 0 10px">
+(50% OFF)</span>
+</h4>
+<span class="alltaxes" style="display:block;font-size:18px; color:#03bb5c; margin-top:5px ">Inclusive of all taxes</span>
+<p>SKU: <span class="proSkuid">TOP05069Z</span></p>
+<div class="prodSizeguide"><h4>SIZE:</h4></div>
+<div class="sizebox">
+    <div class="SIZE"><h1>XS</h1></div>
+    <div class="SIZE"><h1>S</h1></div>
+    <div class="SIZE"><h1>M</h1></div>
+    <div class="SIZE"><h1>L</h1></div>
+    <div class="SIZE"><h1>XL</h1></div>
+    </div>
+  <div class="addtobag">
+      <div>
+      </div>
+ <a href="cart" class="btn">Add To Bag</a>
+ <a href="sd" class="fav"> ♡ add to wishlist</a>
+    </div>
+    <div class="offers">
+        <h6>Offers You Don't Want to Miss</h6>
+        <div id="viewOffer" class="bestoferBox" style="display:block ">
+        <h5>Get it for <span style="border-right:1px solid #323232;padding-right:2px;margin-right:5px">
+         <i class="fal fa-rupee-sign"></i> 510 </span> Use code <span> EXTRA15</span>
+        </h5>
+        <p>Avail <span> 15 % off </span> on orders above <i class="fal fa-rupee-sign"></i>2000</p>
+    </div>
+</div>
+    <div class="pincodebox">
+    <h5>Check Pin Code Serviceability</h5>
+    <div class="pincodeinp">
+    <input type="text" id="txtpincode_deliver" class="numeric" maxlength="6" placeholder="Enter Pin Code"> 
+    <span class="chkesd" id="chkpindelivrd">Check</span>
+     <span class="editesd" id="chkpinedit" style="display:none">Edit</span>
+    </div>
+    <span class="errorMsg" style="display:none;font-size:12px;font-weight:500;color:red"></span>
+    <div class="pincodetext"><div id="dvhideifntchk" style="display:none">
+    <p id="pestimated_deliveryText" style="color:#00BC68"></p></div>
+    <p>Enter PIN code to check availability in your area.</p>
+    <p>Cash on delivery available</p>
+    <p>15 days return/exchange on all products</p>
+    <p style="display:none">Return/Exchange not applicable on Masks</p>
+</div>
+</div>
+    
+</div>
+</body>
+</html>
