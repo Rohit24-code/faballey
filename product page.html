@@ -5,251 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-body {
-    font-family: 'Lato';
-    color: #323232;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-div {
-    display: block;
-}
-.mainbox{
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.photos
-    {
-    float: left;
-    width: 65%;
-}
-.prodRight{
-    float: right;
-    width: 33%;
-    padding-top: 2px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 75px;
-}
-#kkk{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    float: left;
-}
-.sliderBox{
-    display: flex;
-    flex-wrap: wrap;
-}
-ul{
-    margin: 0;
-}
-ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.sliderBox li{
-    list-style: none;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 50%;
-    position: relative;
-}
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-.sliderBox li img {
-    height: auto;
-}
-.sliderBox li img {
-    width: 100%;
-    display: block;
-}
-img {
-    max-width: 100%;
-    border: none;
-}
-.prodRight h2,.prodRight h1 {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: none;
-}
-h1, h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-.prodRight h4 {
-    margin-top: 10px;
-    font-family: 'Lato',sans-serif;
-}
-h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    
-}
-.prodRight h4 span {
-    font-size: 20px;
-    font-weight: 700;
-    color: #f00;
-}
-
-.prodRight p {
-    font-size: 12px;
-    font-weight: 700;
-    margin-top: 10px;
-    font-family: 'Lato',sans-serif;
-    color: #999;
-}
-.prodSizeguide{
-margin-top: 20px;
-
-font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-.sizebox{
-width:60%; 
-height: auto;
-display: flex;
-justify-content: space-between;
-
-}
-.SIZE{
-border:1px solid grey;
-width: 19%;
-text-align: center;
-margin-top: 5px;
-
-
-}
-.addtobag{
-width: 100%;
-margin-top: 25px;
-display: inline-block;
-height: 70px;
-}
-.btn{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    background: #fc6486;
-    display: table-cell;
-    width: 55%;
-    letter-spacing: 1px;
-    padding: 18px 0;
-    float: left;  
-}
-a {
-    color: #323232;
-    text-decoration: none;
-    transition: all .3s ease 0s;
-}
-.fav{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-    display: table-cell;
-    letter-spacing: 1px;
-    padding: 17px 10px;
-    border: 1px solid #dcdcdc;
-    float: left;
-    width: 42%;
-    box-sizing: border-box;
-    margin-left: 3%;
-    white-space: nowrap;
-}
-.offers{
-    margin-top: 15px;
-    border: 1px solid #dcdcdc;
-    padding: 15px 15px 5px 15px;
-}
-.offers h6{
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-.bestoferBox {
-    border-top: 1px solid #dcdcdc;
-    padding: 10px 0;
-   
-}
-.bestoferBox h5{
-   font-size: 20px;
-}
-.bestoferBox p{
-    font-size: 15px;
-}
-.pincodebox {
-    padding: 10px;
-    border: 1px solid #dcdcdc;
-    margin-top: 10px;
-}
-.pincodebox h5{
-    font-size: 24px;
-}
-.pincodetext p{
-font-size: 15px;
-}
-.pincodeinp {
-    position: relative;
-    margin-top: 15px;
-}
-.pincodeinp input[type="text"] {
-    padding: 15px;
-    border: 1px solid #dcdcdc;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-weight: 500;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.pincodeinp span {
-    position: absolute;
-    top: 16px;
-    right: 15px;
-    cursor: pointer;
-    color: #fc6486;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-</style>
+<link rel="stylesheet" href="productcss.css">
 
 
 </head>
 <body>
+    <header>
+        <div class="topmost">
+            <div class="pink exleft"> SALE | UPTO 60% Off.
+                <span style="color: black;">shop now&gt;</span>
+            </div>
+            <div class="inside">
+                <div class="fab" aria-hidden="true"><img src="https://static.faballey.com/images/indya/fabwht.png?v=11.8" alt=""></div>
+                <div style="height: 20px; display: flex; justify-content: center;"><img src="https://static.faballey.com/images/indya/indblk.png?v=11.8" alt=""></div>
+            </div>
+            <div class="exright">Track order | Gift card | Login | Sign up | <i class="fa-regular fa-bag-shopping"></i>
+            </div>
+
+        </div>
+        <!-- second nav bar -->
+        <div class="topmost-2">
+            <div class="hright"><img src="https://static.faballey.com/images/logo.png?v=11.8" alt=""></div>
+            <div class="hmiddle">
+                <div class="new">NEW IN</div>
+                <div class="pink">SUMMER'22</div>
+                <div>CLOTHING</div>
+                <div>TOP</div>
+                <div>DRESSES</div>
+                <div>LOUNGEWEAR</div>
+                <div>CURVES</div>
+                <div>TRENDS</div>
+                <div>LOOKBOOKS</div>
+                <div class="pink">SALE</div>
+                <div>2 DRESSES AT ₹1800</div>
+                <div>2 TOPS AT ₹999</div>
+            </div>
+            <div class="hleft">
+                <i class="fa-regular fa-magnifying-glass"></i>
+                <select class="currency">
+                    <option value="₹INR">₹INR</option>
+                    <option value="USD">$USD</option>
+                    <option value="CAD">$CAD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">$AUD</option>
+                    <option value="SGD">$SGD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- third header  -->
+        <div class=" thirdheader">
+            <div class="rose"><a>Spring Summer'22</a></div>
+            <div class="darkrose"><a>SALE | UPTO 65% Off </a></div>
+            <div class="rose"><a> Free Shipping On All Orders</a></div>
+        </div>
+    </header>
+
+
+
+
+    <!-- closing header  -->  
 <div class="mainbox">
     <div class="photos">
         <div id="kkk">
