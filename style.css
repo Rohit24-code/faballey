@@ -36,6 +36,32 @@
     border-right: 1px solid rgb(41, 38, 38);
     
 }
+.rightside{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    width: 290px;
+    height: 20px;
+}
+
+.rightside div{
+    border-right: 1px solid rgb(37, 36, 36);
+    height: 16px;
+    padding-right: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.rightside div a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: -10px;
+}
+.rightside div:last-child{
+    border: none;
+}
+
 
 .fab{
     background-color: black;
@@ -57,18 +83,16 @@
 .topmost-2{
     height: 120px;
     width: 100%;
-    /* border-bottom: 1px solid rgb(41, 38, 38); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 60px;
     padding-bottom: 7px;
-}
+} 
 .hmiddle{
     width: auto;
     display: flex;
     margin: 5px;
-    
 }
 .hmiddle div{
     /* border: 1px solid black; */
@@ -79,23 +103,133 @@
     line-height: 18px;
 
 }
-.hright img {
-    height: 100%;
-    width: 70%;
-    margin-left: 20px;
+.headerbox{
+    padding: 60px 0 7px 0;
 }
+.hright{
+    max-width: 170px;
+    width: 100%;
+    margin-left: 15px;
+    float: left;
+    /* position: relative; */
+}
+.hright img{
+    max-width: 100%;
+    border: none;
+    display: block;
+}
+/* .hright img { */
+    /* height: 100%; */
+    /* width: 70%; */
+    /* margin-left: 20px; */
+/* } */
 .hleft{
-    padding: 3px 7px;
+    /* padding: 3px 7px;
     font-size: 13px;
-    margin-right: 20px;
+    margin-right: 20px; */
+    float: right;
+    margin: 4px 15px 0 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
 }
+nav{
+display: block;
+
+}
+
+.menumain{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+/* .mainmenu{
+    display: flex;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+    width: 100%;
+} */
+.menucntr{
+    background: #fff;
+    z-index: 2;
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 0%;
+    /* position: fixed; */
+}
+ul{
+    background: #fff;
+    z-index: 2;
+    display: inline-block;
+    margin-left: -7%;
+    position:relative;
+}
+
+.lvl-1>li{
+    float: left;
+    display: block;
+    list-style: none;
+}
+.lvl-1>li>a{
+    font-weight: 600;
+    display: inline-block;
+    font-size: 11.5px;
+    line-height: 18px;
+    overflow: visible;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #323232;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    font-family: 'Lato',sans-serif;
+}
+/* li{ */
+    /* text-align: -webkit-match-parent; */
+/* } */
+
+                                                 /* MEGA MENU  */
+
+.menucntr ul li .sub-menu {
+    position: absolute;
+    width: 117.5%;
+    border: 2px solid black;
+    background-color: white;
+    left: 0;
+    right: 0;
+}
+
+.menucntr ul li .sub-menu .col{
+display: flex;
+justify-content: space-around;
+border: 1px solid red;
+width: 100%;
+left: 0;
+right: 0;
+}
+
+
+/* .navfixed{
+    position: fixed;
+    margin-top: 0;
+    top: 37px;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    z-index: 99998;
+    padding: 0;
+    transition: all .2s ease-in-out;
+    text-align: left;
+} */
 /* third header */
 
 .thirdheader{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5px 0 5px 0;
+    margin: -15px 0 5px 0;
 }
 .thirdheader a{
     padding: 7px;
@@ -521,8 +655,166 @@ footer{
     width: 130px;
     height: 40px;
 }
+                                            /* fotter vla text below scroll  */
 
 .faballeycsr{
     display: flex;
-     ;
+    border-bottom: 1px solid rgb(202, 197, 197);
+    justify-content: space-evenly;
+    text-align: center;
+    width: 92%;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+.faballeycsr h2{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.faballeycsr p{
+    line-height: 8px;
+    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;;
+}
+.btn{
+    background-color: #323232;
+    color: #dcdcdc;
+    padding: 12px;
+    border-radius: 0;
+}
+
+.input{
+    width: 240px;
+    margin: 5px;
+}
+
+.help{
+    display: inline-block;
+    /* border: 1px solid red; */
+    min-height: 200px;
+    width: 44%;
+    border-right: 1px solid #dcdcdc;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+/* .helpone{ */
+    /* display: block; */
+    /* border: 1px solid blue; */
+/* } */
+/* .helptwo{ */
+    /* border: 1px solid seagreen; */
+/* } */
+.firstcom{
+    border-right: 1px solid #dcdcdc;
+    text-align: left;
+    padding-right: 50px;
+}
+/* .newsletter{ */
+    /* border: 1px solid palevioletred; */
+/* } */
+.havetwo{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5px;
+}
+.newsletter{
+    text-align: center;
+    margin-top: 10px;
+}
+.company{
+     margin-top: 10px;
+    /* border-right: 1px solid red;  */
+}
+.companyone{
+    margin-top: 10px;
+    /* border: 1px solid palegreen; */
+}
+.connecticon{
+    /* border: 1px solid saddlebrown;/ */
+    margin-top: 54px;
+}
+
+/* second last box   */
+
+.threediv{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    border-bottom: 1px solid #dcdcdc ;
+    width: 94%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.threediv p{
+    line-height: 8px;
+    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;;
+}
+.head{
+    /* border: 1px solid blueviolet; */
+    width: 350px;
+    margin-top: 15px;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 15px;
+}
+.insidehead{
+    margin-top: 25px;
+}
+.insidehead h2{
+ margin-bottom: 25px;
+}
+.return{
+    /* border: 1px solid sandybrown; */
+    margin-top: 35px;
+    padding-right: 25px;
+    border-right: 1px solid #dcdcdc;
+}
+.return h2{
+    margin-bottom: 45px;
+}
+.return p{
+    width: 200px;
+}
+.payment{
+    /* border:  1px solid saddlebrown; */
+    margin-top: 35px;
+    width: 400px;
+}
+
+.threediv h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.secondlast{
+    border-bottom: 1px solid #dcdcdc;
+    margin: auto;
+    width: 88%;
+    padding-top: 15px;
+}
+.secondlast h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 0 16px 0;
+}
+.secondlast p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    text-indent: 68px;
 }
