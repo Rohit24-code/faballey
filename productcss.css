@@ -326,6 +326,7 @@ a {
 .bestoferBox p{
     font-size: 15px;
 }
+
 .pincodebox {
     padding: 10px;
     border: 1px solid #dcdcdc;
@@ -341,6 +342,7 @@ font-size: 15px;
     position: relative;
     margin-top: 15px;
 }
+
 .pincodeinp input[type="text"] {
     padding: 15px;
     border: 1px solid #dcdcdc;
