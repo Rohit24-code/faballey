@@ -83,10 +83,7 @@
      #container > div > p {
         cursor: pointer;
      }
-     /* body{
-  font-family: 'times new roman', sans-serif;
-  font-size: 18.72px;
-    } */
+
    .list-choice{
 
   width:220px;
@@ -95,6 +92,7 @@
   cursor: pointer;  
   font-family: 'times new roman', sans-serif;
   font-size: 18.72px;
+  box-sizing: border-box solid;
 }
 .list-choice input[type="radio"]{
   position:absolute;
@@ -114,7 +112,8 @@ color:black;
 text-shadow: 0 1px 0 black;
 border-radius: 0.2em;
 font-family: 'times new roman', sans-serif;
-  font-size: 18.72px;
+font-size: 18.72px;
+box-sizing: border-box solid;
 }
 .list-choice:hover .list-choice-title {
 border-radius:0.2em 0.2em 0 0;
@@ -125,14 +124,15 @@ border-radius:0.2em 0.2em 0 0;
 .list-choice input[type="radio"] + span {
 color: black;
 background: white;
-padding: 20px 0 0 0;
+padding: 10px 0 0 0;
 display: block;
 text-align: center;
 box-sizing: border-box;
 cursor: pointer;
 width: 100%;
 font-family: 'times new roman', sans-serif;
-  font-size: 18.72px;
+font-size: 18.72px;
+box-sizing: border-box solid;
 }
 .list-choice-objects {
 position: absolute;
@@ -143,8 +143,9 @@ width: 100%;
 overflow: hidden;
 max-height: 0;
 font-family: 'times new roman', sans-serif;
-  font-size: 18.72px;
+font-size: 18.72px;
 transition: all 250ms ease;
+box-sizing: border-box solid;
 }
 .list-choice:hover .list-choice-objects  input[type="radio"] + span {
 position: relative;
@@ -459,7 +460,7 @@ var TopsData = [
   image_url:
     "https://img.faballey.com/images/Product/TOP04334Z/1.jpg ",
   name: "Black Embellished Neck Layered Top ",
-  price: "₹750",
+  price: "₹750"  ,
   strikedoffprice: "₹1500",
 },
 {
@@ -676,12 +677,12 @@ var name = document.createElement("p");
 name.textContent = elem.name;
 
 var price = document.createElement("h4");
-price.innerText = elem.price;
+price.innerText = elem.price ;
 
 var strikedoffprice = document.createElement("h5");
 strikedoffprice.innerText =  elem.strikedoffprice; 
 
-box.append(img, name, price, strikedoffprice );
+box.append(img, name, price , strikedoffprice);
 
 document.querySelector("#container").append(box);
 });
