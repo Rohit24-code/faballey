@@ -83,40 +83,97 @@
      #container > div > p {
         cursor: pointer;
      }
+     /* body{
+  font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
+    } */
+   .list-choice{
 
-     select.minimal {
-  background-image:
-    linear-gradient(45deg, transparent 100%),
-    linear-gradient(135deg, transparent 100%),
-    linear-gradient(to right);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
+  width:220px;
+  margin:auto;
+  position: relative; 
+  cursor: pointer;  
+  font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
+}
+.list-choice input[type="radio"]{
+  position:absolute;
+  left:none;
+  font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
 }
 
-  select.minimal:focus {
-    background-image:
-    linear-gradient(45deg, transparent 100%),
-    linear-gradient(135deg, transparent 100%,),
-    linear-gradient(to right);
-    background-position:
-    calc(100% - 15px) 1em,
-    calc(100% - 20px) 1em,
-    calc(100% - 2.5em) 0.5em;
-    background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-    background-repeat: no-repeat;
-    border-color: none;
-    outline: 0;
-}     
+.list-choice-title {
+width: 100%;
+display: block;
+background:none;
+text-align: left;
+padding: 0 0 0 0;
+box-sizing: border-box;
+color:black;
+text-shadow: 0 1px 0 black;
+border-radius: 0.2em;
+font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
+}
+.list-choice:hover .list-choice-title {
+border-radius:0.2em 0.2em 0 0;
+}
+.list-choice-objects label:nth-last-of-type(1) span{
+  border-radius:0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+color: black;
+background: white;
+padding: 20px 0 0 0;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
+}
+.list-choice-objects {
+position: absolute;
+top: 0;
+padding-top: 2.1em;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+max-height: 0;
+font-family: 'times new roman', sans-serif;
+  font-size: 18.72px;
+transition: all 250ms ease;
+}
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+
+transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+background: rgb(231, 228, 228);
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:none;
+}
+.list-choice input[type="radio"]:checked + span {
+background: none;
+position: absolute;
+
+border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+  
     </style>
   </head>
   <body>
@@ -125,73 +182,215 @@
       
     <div id="topsection">
      <div><h2> TOPS </h2> </div>
-      <select class="drop">
-      <option> TOPS </option>
-      <option>CROP TOPS</option>
-      <option>TANK TOPS</option>
-      <option>T-SHIRTS</option>
-      <option>SHIRTS</option>
-      <option>BLOUSES</option>
-      <option>MAXI TOPS</option>
-      <option>PEPLUM TOPS</option>
-      <option>CAPE TOPS</option>
-      <option>WRAP TOPS</option>
-      <option>HALTER TOP</option>
-      <option>LACE TOPS</option>
-      <option>COLD SHOULDER TOPS</option>
-      <option>OFF SHOULDER TOPS</option>
-      <option>BELL SLEEVES TOPS</option>
-      </select>
+      <div class="list-choice">
+        <div class ="list-choice-title"> TOPS </div>
+      <div class ="list-choice-objects">
+      <label>
+         <input type="radio"/>
+         <span>CROP TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>TANK TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>T-SHIRTS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>SHIRTS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>BLOUSES</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>MAXI TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>PEPLUM TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>CAPE TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>WRAP TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>HALTER TOP</span>
+      </label>
+      <label>
+         <input type="radio"/>
+      <span>LACE TOPS</span> 
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>COLD SHOULDER TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>OFF SHOULDER TOPS</span>
+      </label>
+      <label>
+         <input type="radio"/>
+         <span>BELL SLEEVES TOPS</span>
+      </label>
+      </div>
+      </div>
+
       <div><h3> JUMPSUITS </h3></div>
       <div> <h3> WORK FROM HOME COLLECTION </h3> </div> 
-      <select class="drop">
-      <option> LOUNGEWEAR </option>
-      <option> COORDINATES  </option>
-      <option>TOPS</option>
-      <option>DRESSES</option>
-      <option>SKIRTS</option>
-      <option>BOTTOMS</option>
-      </select>
-      <div><h3> PARTY WEAR </h3> </div>
-      <div><h3> NAB-NOW PIECES </h3></div>    
-      <select class="drop">
-      <option> DRESSES </option>
-      <option>BODYCON DRESSES</option>
-      <option>SKATER DRESSES</option>
-      <option>A-LINE DRESSES</option>
-      <option>SHIRT DRESSES</option>
-      <option>SHIFT DRESSES</option>
-      <option>MAXI DRESSES</option>
-      <option>WRAP DRESSES</option>
-      <option>HALTER DRESS</option>
-      <option>OFF SHOULDER DRESSES</option>
-      <option>COLD SHOULDER DRESSES</option>
-      <option>RUFFLE DRESSES</option>
-      <option>LITTLE BLACK DRESSES</option>
-      <option>MIDI DRESSES</option>
-      <option>MINI DRESSES</option>
-      </select>
-      <select class="drop">
-      <option> <h3>SKIRTS </h3></option>
-      <option><h3> MINI SKIRTS</h3> </option>
-      <option><h3> MAXI SKIRTS</h3> </option>
-      <option><h3> MIDI SKIRTS </h3></option>
-      </select>
-     <select class="drop">
-      <option><h3> BOTTOMS</h3> </option>
-      <option> <h3>FORMAL TROUSERS</h3> </option>
-      <option><h3> LEGGINGS & JEGGINGS</h3></option>
-      <option><h3> WIDE LEGGED PANTS</h3></option>
-     </select>
-     <select class="drop">
-      <option><h3> WINTER WEAR</h3> </option>
-      <option> <h3>BLAZERS</h3> </option>
-      <option><h3> JACKETS</h3></option>
-      <option><h3> COATS</h3></option>
-      <option><h3> SHRUGS</h3></option>
-      <option><h3> SWEATERS & CARDIGANS</h3></option>
-      <option><h3> HOODIES & SWEATSHIRTS</h3></option>
-     </select>
+      <div class="list-choice">
+        <div class ="list-choice-title">LOUNGEWEAR </div>
+      <div class ="list-choice-objects">
+      <label>
+        <input type="radio"/>
+        <span>COORDINATES  </span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>TOPS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>SKIRTS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>BOTTOMS</span>
+     </label>
+     </div>
+     </div>
+     <div><h3> PARTY WEAR </h3> </div>
+     <div><h3> NAB-NOW PIECES </h3></div>    
+     <div class="list-choice">
+     <div class ="list-choice-title"> DRESSES </div>
+     <div class ="list-choice-objects">
+     <label>
+        <input type="radio"/>
+        <span>BODYCON DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>SKATER DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>A-LINE DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>SHIRT DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>SHIFT DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>MAXI DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>WRAP DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>OFF SHOULDER DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>COLD SHOULDER DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>RUFFLE DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+     <span>LITTLE BLACK DRESSES</span> 
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>MINI DRESSES</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>OFF SHOULDER TOPS</span>
+     </label>
+     </div>
+     </div>
+     
+     <div class="list-choice">
+      <div class ="list-choice-title"> SKIRTS </div>
+     <div class ="list-choice-objects">
+     <label>
+        <input type="radio"/>
+        <span>MINI SKIRTS</span> 
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>MAXI SKIRTS</span>
+     </label>
+     <label>
+       <input type="radio"/>
+       <span>MIDI SKIRTS</span>
+     </label>
+     </div>
+     </div> 
+     <div class="list-choice">
+     <div class ="list-choice-title"> BOTTOMS </div>
+     <div class ="list-choice-objects">
+      <label>
+        <input type="radio"/>
+        <span>FORMAL TROUSERS</span> 
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>LEGGINGS & JEGGINGS</span>
+     </label>
+     <label>
+       <input type="radio"/>
+       <span>WIDE LEGGED PANTS</span>
+     </label>
+     </div>
+     </div>
+
+     <div class="list-choice">
+     <div class ="list-choice-title">WINTER WEAR</div>
+     <div class ="list-choice-objects">
+     <label>
+        <input type="radio"/>
+        <span>BLAZERS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>JACKETS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>COATS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>SWEATERS & CARDIGANS</span>
+     </label>
+     <label>
+        <input type="radio"/>
+        <span>HOODIES & SWEATSHIRTS</span> 
+     </label>
+    </div>
+    </div>
      <div><h3> JEANS </h3> </div>
      <div><h3> SHORTS </h3> </div> 
      <div><h3> SHRUGS </h3> </div>
