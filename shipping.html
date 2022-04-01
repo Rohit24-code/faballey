@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0b02ee7597.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+        .chkHeadmain {
+    width: 100%;
+    background: #f4f4f4;
+}
+
+#head {
+            height: 70px;
+            width: 100%;
+            background: #f4f4f4;
+           } 
+
+        * {
+            margin: 0;
+           padding: 0;
+            
+        }
+
+    #midhead {
+    display:flex;
+    height: 80px;
+    width:100%; 
+    margin: auto;
+    margin-top:0px;
+    justify-content: space-around;
+    
+}
+
+   #midhead  div {
+ display:flex;
+ height: 80%;
+ width: 30%;
+ justify-content: space-around;
+ 
+
+ }
+#logo>a{
+    margin: auto;
+}
+
+ #logo img {
+     margin: auto;
+    height: 20px;
+    padding: 30;
+    
+    
+} 
+
+ul {
+    display: flex; 
+     justify-content: space-around; 
+    list-style-type:none;
+    margin: auto;
+
+  
+}
+
+    #shopingStep li {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+  
+#shopingStep li a{
+    color: #adadad;
+    padding: 10px 20px; 
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+
+}
+
+#secureBox{
+    
+    font-size: 14px;
+    float: right;
+    color: #adadad;
+    line-height: 30px;
+    
+}
+#secureBox li{
+    text-align: center;
+    margin: auto;
+}
+
+#lowerCont{
+    height:600px;
+    width: 80%;
+    display:flex;
+    border: 1px solid red;
+    margin: auto;
+}
+#lowerCont>div{
+    height:570px;
+    width:45%;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.midHead{
+    border: 1px solid red;
+    height: 70px;
+}
+.editAddres {
+    margin-bottom: 10px;
+}
+.editAddres {
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <!-- <div class="chkHeadmain">
+        <div class="ulbagMain">
+            <div class="checkoutHead">
+                <div class="mobLogo">
+                    <figure>
+                        <a href="/"> <img src="/images/mobile/moblogo.png" alt=""></a>
+                    </figure>
+                </div>
+                <span class="steps">Step 2/3</span>
+            </div>
+            <div class="shpStepsmain">
+                <div class="checkoutLogo">
+                    <a href="/"><img src="/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="secureBox">
+                    <i class="fa fa-user"></i>
+                    &nbsp;priyo.das.0607</div>
+                    <div class="cl">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopingStep">
+            <ul>
+        <li>
+    <a href="/checkout/cart" class="crpnt">
+        <i class="fa fa-shopping-cart">
+
+        </i>
+        Bag</a>
+    </li>
+    <li>
+        <a href="javascript:void(0)">
+            <i class="fa fa-sign-in">
+
+            </i>login
+        </a>
+    </li>
+    <li>
+        <a href="/checkout/shipping" class="stepActive crpnt">
+            <i class="fa fa-truck">
+
+            </i>Shipping</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">
+                <i class="fa fa-credit-card">
+
+                </i>Payment</a>
+            </li>
+        </ul>
+    </div>
+ -->
+
+ <div id="head">
+    <div id="midhead">
+        <div id="logo">
+            <a href="https://www.faballey.com/" target="_blank">
+                <img style="color:pink" src="https://static.faballey.com/images/logo.png?v=11.8" alt="">
+            </a>
+        </div>
+        <div id="shopingStep">
+         
+   
+            <ul>
+                <li>
+                    <a href="www.cart.html" class="stepActive crpnt">
+                    <i class="fa fa-shopping-cart"></i>
+                    <br>
+                    bag
+                </a>
+                </li>
+                <li><a href="www.shipping.html" class="crpnt">
+                    <i class="fa fa-truck"></i>
+                    <br>
+            Shipping
+                </a>
+                </li>
+                <li>
+                    <a href="www.payment.html" >
+                    <i class="fa fa-credit-card"></i>
+                    <br>
+                    Payment
+                </a>
+                </li>
+            </ul>
+         </div>
+        <div id="secureBox">
+            <ul>
+                <li>
+                    <i class="fa fa-user"></i>
+                    priyodas1997
+            </li>
+            
+</ul>
+            
+</div>
+
+</div> 
+</div>
+
+<!-- mainbox -->
+<div class="ulbagMain">
+    <div class="siteArea">
+        <div class="bagLsftcntr" >
+<div class=""item-prize>
+    <p>Where do you want us to deliver?</p>
+</div>
+
+<div class="editAddresform">
+    <div class="editAddresbox">
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<!-- <div class="bagRightcntr">
+<div class="bagRightitle">
+<h3>Product Details</h3>
+<a href="/checkout/cart">Edit Bag</a>
+</div>
+<div class="shpItemsMain">
+    <div class="shpItems" data-var-qnty="1" data-style="BOT00593" data-name="Wine Waist Zip Jeggings " data-currency="INR" data-variant="BOT00593B" data-category="Clothing/Bottoms/Leggings &amp; Jeggings" data-price="1050.00" data-brand="faballey">
+        <img src="https://img.faballey.com/images/Product/BOT00593A/1.jpg"> 
+        <span>Wine Waist Zip Jeggings <br>
+             Sku : BOT00593B<br> 
+             Qty : 1 <span class="shipItemPrice"> 
+                 Price : <i class="fal fa-rupee-sign"></i> 
+                 1050 </span> 
+                </span>
+            </div>
+        </div>
+        <h3>Price Details</h3>
+        <div class="optionBox" style="width:100%;box-sizing:border-box">
+            <div class="przdlmain" style="width:100%">
+                <div class="prizeDetailbox">
+                    <div class="prizeDetail">
+                        <p>Sub Total</p>
+                        <span>
+                            <i class="fal fa-rupee-sign">
+
+                            </i>
+                             1050</span>
+                            </div>
+                            <div class="prizeDetail" id="bill-shippment-charge" style="display:none">
+                                <p>Shipping</p>
+                                <span>
+                                    <i class="fal fa-rupee-sign"></i> 
+                                    0</span>
+                                </div>
+                                <div class="prizeDetail">
+                                    <p>Donation</p>
+                                    <span>
+                                         <i class="fal fa-rupee-sign">
+
+                                         </i> 
+                                         10</span>
+                                        </div>
+                                        <div class="orderTotal">
+                                            <p>Total</p>
+                                            <span> 
+                                                <i class="fal fa-rupee-sign" style="float:none">
+                            </i> 1060 </span>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="shipdays">Estimated Delivery Time<br><br> India : 4-6 business days.<br> International: 7-12 business days.</p>
+</div>
+<div class="cl">
+
+</div>
+</div>
+<div class="cl">
+
+</div>
+</div>
+</div> -->
+
+
+</body>
+</html>
