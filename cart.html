@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,503 +8,630 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0b02ee7597.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            color: #000;
+        }
+        .last{
+            color: palevioletred;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 8px;
+        }
 
-       body{
-        font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: #000;
-       }
+        .box {
+            /* border: 1px solid brown; */
+            margin-top: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+        }
+
+        .divone {
+            /* border: 1px solid teal; */
+        margin-right: 15px;
+        }
+
+        .divtwo {
+            /* justify-content: end; */
+            justify-content: space-between;
+            /* border: 1px solid black; */
+            width: 90%;
+            display: flex;
+            margin-bottom: 20px; 
+        }
+        .divtwo h4{
+            margin-top: 17px;
+        }
+         p{
+            font-size: 16px;
+            color: rgb(99, 96, 96);
+        }
+        /* .details{  */
+            /* border: 1px solid greenyellow;  */
+            /* margin-top: 80px; */
+         /* } */
 
         #head {
             height: 70px;
             width: 100%;
             background: #f4f4f4;
-           } 
+        }
 
         * {
             margin: 0;
-           
-            
+
+
         }
 
-    #midhead {
-    display:flex;
-    height: 80px;
-    width:100%; 
-    margin: auto;
-    margin-top:0px;
-    justify-content: space-around;
-    
-}
+        #midhead {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            margin: auto;
+            margin-top: 0px;
+            justify-content: space-around;
 
-   #midhead  div {
- display:flex;
- height: 80%;
- width: 30%;
- justify-content: space-around;
- 
+        }
 
- }
-#logo>a{
-    margin: auto;
-}
-
- #logo img {
-     margin: auto;
-    height: 20px;
-    padding: 30;
-    
-    
-} 
-
-ul {
-    display: flex; 
-     justify-content: space-around; 
-    list-style-type:none;
-    margin: auto;
-
-  
-}
-
-    #shopingStep li {
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    
-}
-  
-#shopingStep li a{
-    color: #adadad;
-    padding: 10px 20px; 
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    
-    
-
-}
-
-#secureBox{
-    
-    font-size: 14px;
-    float: right;
-    color: #adadad;
-    line-height: 30px;
-    
-}
-#secureBox li{
-    text-align: center;
-    margin: auto;
-}
-
-#lowerCont{
-    height:600px;
-    width: 80%;
-    display:flex;
-    border: 1px solid red;
-    margin: auto;
-}
-#lowerCont>div{
-    height:570px;
-    width:45%;
-    border: 1px solid blue;
-    margin: auto;
-}
-
-.ulbagMain {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        #midhead div {
+            display: flex;
+            height: 80%;
+            width: 30%;
+            justify-content: space-around;
 
 
-div {
-    display: block;
-}
-.bagLeftcntr {
-    width: 62%;
-    float: left;
-    min-height: 460px;
-    height: 100%;
-}
+        }
 
-.item-prize {
-    padding: 15px 0;
-    display: inline-block;
-    width: 100%;
-}
-.itemBox img {
-    max-width: 100%;
-    display: block;
-}
-.item-prize p {
-    float: left;
-    font-size: 20px;
-    color: #555555;
-}
-p {
-    display: block;
-    margin-block-start: 1px;
-    /* margin-block-end: 1em; */
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.itemMain {
-    width: 100%;
-    float: left;
-    border: 1px solid #ececec;
-    margin-bottom: 30px;
-}
-.itemDetail {
-    display: inline-block;
-    width: 83%;
-}
-/* @media only screen and (min-width: 768px) and (max-width: 1024px)
+        #logo>a {
+            margin: auto;
+        }
+
+        #logo img {
+            margin: auto;
+            height: 20px;
+            padding: 30;
+
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: auto;
+
+
+        }
+
+        #shopingStep li {
+            display: inline-block;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        #shopingStep li a {
+            color: #adadad;
+            padding: 10px 20px;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+
+
+
+        }
+
+        #secureBox {
+
+            font-size: 14px;
+            float: right;
+            color: #adadad;
+            line-height: 30px;
+
+        }
+
+        #secureBox li {
+            text-align: center;
+            margin: auto;
+        }
+
+        #lowerCont {
+            height: 600px;
+            width: 80%;
+            display: flex;
+            border: 1px solid red;
+            margin: auto;
+        }
+
+        #lowerCont>div {
+            height: 570px;
+            width: 45%;
+            border: 1px solid blue;
+            margin: auto;
+        }
+
+        .ulbagMain {
+            /* max-width: 1000px; */
+            /* margin: 0 auto; */
+            width: 80%;
+            margin: auto;
+            display: flex;
+            border: 2px solid red;
+        }
+        .siteArea{
+            width: 100%;
+        }
+        
+
+        div {
+            display: block;
+        }
+
+
+        .bagLeftcntr {
+            width: 62%;
+            
+            /* float: left; */
+            /* min-height: 460px; */
+            height: 100%;
+            border: 1px solid #ccc;
+            margin-top: 17px;
+            margin-right: 30px;
+            /* margin-left: 80px; */
+        }
+
+        .anchor{
+            /* margin-bottom:50px; */
+            /* padding-top: 80px; */
+            display: inline-block;
+            margin: 10px;
+            font-size: 14px;
+            text-decoration: underline;
+            color: #323232;
+        }
+
+        .item-prize {
+            padding: 15px 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .itemBox img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .item-prize p {
+            float: left;
+            font-size: 20px;
+            color: #555555;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1px;
+            /* margin-block-end: 1em; */
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .itemMain {
+            width: 100%;
+            float: left;
+            border: 1px solid #ececec;
+            margin-bottom: 30px;
+        }
+
+        .itemDetail {
+            display: inline-block;
+            width: 83%;
+        }
+
+        /* @media only screen and (min-width: 768px) and (max-width: 1024px)
 .itemDetail, .itemRemovemain, .editItembox {
     width: 76%;
 } */
 
-element.style {
-    width: 100%;
-    box-sizing: border-box;
-}
-.itemLeft {
-    font-size: 13px;
-    color: #000;
-    font-weight: normal;
-    padding: 15px;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
+        element.style {
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-.sampleMain {
-    width: 100%;
-    float: left;
-    position: relative;
-}
-.itemBox {
-    float: left;
-    margin: 0 15px 0 0;
-     width: 80px;
-    max-width: 100%;
-    border: 1px solid #e6e6e6;
-}
-figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-}
-/* * {
+        .itemLeft {
+            font-size: 13px;
+            color: #000;
+            font-weight: normal;
+            padding: 15px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sampleMain {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .itemBox {
+            float: left;
+            margin: 0 15px 0 0;
+            width: 80px;
+            max-width: 100%;
+            border: 1px solid #e6e6e6;
+        }
+
+        figure {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 40px;
+            margin-inline-end: 40px;
+        }
+
+        /* * {
     margin: 0;
     padding: 0;
 } */
 
 
-/* .image {
+        /* .image {
     max-width: 100%;
     display: block;
 } */
-img {
-    border: none;
-}
-a:-webkit-any-link {
-    cursor:pointer;
-}
+        img {
+            border: none;
+        }
 
-.itemDetail {
-    display: inline-block;
-    width: 83%;
-}
-.sampleBox {
-    display: inline-block;
-    margin: 0;
-    width: 77%;
-    justify-content: left;
-}
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    /* margin-block-end: 1em; */
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-.sampleBox h3{
-    margin-top: 2px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-.sampleBox h3 a {
-    font-size: 15px;
-    font-weight: normal;
-    color: #555555;
-    
-}
-/* .sizeQty {
+        a:-webkit-any-link {
+            cursor: pointer;
+        }
+
+        .itemDetail {
+            display: inline-block;
+            width: 83%;
+        }
+
+        .sampleBox {
+            display: inline-block;
+            margin: 0;
+            width: 77%;
+            justify-content: left;
+        }
+
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            /* margin-block-end: 1em; */
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        .sampleBox h3 {
+            margin-top: 2px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .sampleBox h3 a {
+            font-size: 15px;
+            font-weight: normal;
+            color: #555555;
+
+        }
+
+        /* .sizeQty {
     padding-top: 15px;
 } */
-.sizeQty span {
-    margin-right: 50px;
-    white-space: nowrap;
-    color: #4a4a4a;
-    font-size: 13px;
-}
-/* a {
+        .sizeQty span {
+            margin-right: 50px;
+            white-space: nowrap;
+            color: #4a4a4a;
+            font-size: 13px;
+        }
+
+        /* a {
     text-decoration: none;
     color: #000;
 } */
-.sampleBox p {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 25px;
-    color: #4a4a4a;
-}
-.total-dicount {
-    float: right;
-    text-align: right;
-}
-.fal, .far {
-    font-family: "Font Awesome 5 Pro";
-}
-.total-dicount span {
-    margin: 7px 5px 0 0;
-    display: inline-block;
-    /* color: #6e6e6e; */
-}
-.total-dicount p {
-    font-size: 15px;
-    color: #555555;
-}
+        .sampleBox p {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 25px;
+            color: #4a4a4a;
+        }
 
-.bagdislbl {
-    color: #fc6486 !important;
-}
-.fa-rupee-sign:before {
-    content: "\f156";
-}
-.soldOutMsg {
-    font-size: 15px;
-    font-weight: 600;
-    color: red;
-    font-style: normal;
-    float: right;
-    margin-top: 40px;
-}
-.editItembox {
-    display: inline-block;
-    width: 83%;
-}
-.item-remove {
-    float: right;
-    cursor: pointer;
-    color: #bcbcbc;
-    font-size: 17px;
-}
-.itemRemovemain {
-    border-top: 1px solid #ececec;
-    padding: 8px 0 0 0;
-    display: inline-block;
-    width: 80%;
-    margin-top: 16px;
-    margin: auto;
-}
-.moreWishlist {
-    text-align: right;
-    border: 1px solid #ececec;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-}
-.bagRightcntr {
-    width: 35%;
-    float: right;
-    /* padding: 15px 0 40px 0; */
-}
-ul, ol {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-.fa-trash:before {
-    content: "\f1f8";
-}
-.fa-rupee-sign:before {
-    content: "\f156";
-}
-.moreWishlist {
-    text-align: right;
-    border: 1px solid #ececec;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-}
-.cntshop {
-    margin-left: 3%;
-    float: left;
-}
-.cntshop a {
-    color: #fc6486;
-    font-size: 15px;
-    font-weight: 300;
-    text-decoration: none;
-}
-.moreWishlist span {
-    font-size: 13px;
-    cursor: pointer;
-    color: #fc6486;
-    margin-right: 3%;
-    
-}
-.moreWishlist a{
-    text-decoration: none;
-}
-.bagRightcntr h3 {
-    font-size: 20px;
-    color: #555555;
-    font-weight: 400;
-    padding-bottom: 15px;
-}
-element.style {
-    width: 100%;
-    box-sizing: border-box;
-}
-.optionBox {
-    display: inline-block;
-    background: #f4f4f4;
-    padding: 20px;
-    
-}
-.giftWrap {
-    padding: 0 0 10px 0;
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid #ececec;
-}
-.giftWrap p {
-    font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
-    color: #555555;
-}
-.fal, .far {
-    font-family: "Font Awesome 5 Pro";
-}
-.fal {
-    font-weight: 300;
-}
-.fa-caret-left:before {
-    content: "\f0d9";
-}
-label {
-    cursor: default;
-}
-.giftWrap input[type="checkbox"] {
-    float: right;
-    margin-top: 5px;
-}
+        .total-dicount {
+            float: right;
+            text-align: right;
+        }
+
+        .fal,
+        .far {
+            font-family: "Font Awesome 5 Pro";
+        }
+
+        .total-dicount span {
+            margin: 7px 5px 0 0;
+            display: inline-block;
+            /* color: #6e6e6e; */
+        }
+
+        .total-dicount p {
+            font-size: 15px;
+            color: #555555;
+        }
+
+        .bagdislbl {
+            color: #fc6486 !important;
+        }
+
+        .fa-rupee-sign:before {
+            content: "\f156";
+        }
+
+        .soldOutMsg {
+            font-size: 15px;
+            font-weight: 600;
+            color: red;
+            font-style: normal;
+            float: right;
+            margin-top: 40px;
+        }
+
+        .editItembox {
+            display: inline-block;
+            width: 83%;
+        }
+
+        .item-remove {
+            float: right;
+            cursor: pointer;
+            color: #bcbcbc;
+            font-size: 17px;
+        }
+
+        .itemRemovemain {
+            border-top: 1px solid #ececec;
+            padding: 8px 0 0 0;
+            display: inline-block;
+            width: 80%;
+            margin-top: 16px;
+            margin: auto;
+        }
+
+        .moreWishlist {
+            text-align: right;
+            border: 1px solid #ececec;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .bagRightcntr {
+            width: 35%;
+            float: right;
+            /* padding: 15px 0 40px 0; */
+        }
+
+        ul,
+        ol {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        .fa-trash:before {
+            content: "\f1f8";
+        }
+
+        .fa-rupee-sign:before {
+            content: "\f156";
+        }
+
+        .moreWishlist {
+            text-align: right;
+            border: 1px solid #ececec;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .cntshop {
+            margin-left: 3%;
+            float: left;
+        }
+
+        .cntshop a {
+            color: #fc6486;
+            font-size: 15px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        .moreWishlist span {
+            font-size: 13px;
+            cursor: pointer;
+            color: #fc6486;
+            margin-right: 3%;
+
+        }
+
+        .moreWishlist a {
+            text-decoration: none;
+        }
+
+        .bagRightcntr h3 {
+            font-size: 20px;
+            color: #555555;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+
+        element.style {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .optionBox {
+            display: inline-block;
+            background: #f4f4f4;
+            padding: 20px;
+
+        }
+
+        .giftWrap {
+            padding: 0 0 10px 0;
+            display: inline-block;
+            width: 100%;
+            border-bottom: 1px solid #ececec;
+        }
+
+        .giftWrap p {
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            color: #555555;
+        }
+
+        .fal,
+        .far {
+            font-family: "Font Awesome 5 Pro";
+        }
+
+        .fal {
+            font-weight: 300;
+        }
+
+        .fa-caret-left:before {
+            content: "\f0d9";
+        }
+
+        label {
+            cursor: default;
+        }
+
+        .giftWrap input[type="checkbox"] {
+            float: right;
+            margin-top: 5px;
+        }
 
 
-.giftWrap label input {
-    display: none;
-}
-input[type="checkbox" i] {
-    background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 3px 4px;
-    padding: initial;
-    border: initial;
-}
-.giftWrap span {
-    font-size: 11px;
-    font-weight: normal;
-    display: inline-block;
-    color: #6e6e6e;
-    width: 85%;
-}
-.donation {
-    padding: 15px 0;
-    display: inline-block;
-    width: 100%;
-}
-.donation p {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    color: #555555;
-}
-.donation label input {
-    display: none;
-}
-.donation label i {
-    /* justify-content: right; */
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    position: relative;
-    float: right;
-    
-    border: 1px solid #ccc;
-}
-.donation [type=checkbox]:checked + i:before {
-    content: '\2714';
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 14px;
-    color: #fff;
-    background: #fc6486;
-    width: 17px;
-    height: 20px;
-    padding-left: 3px;
-}
-.donation span {
-    font-size: 11px;
-    font-weight: normal;
-    display: inline-block;
-    width: 85%;
-    color: #6e6e6e;
-}
-.donation label span i {
-    width: auto;
-    height: auto;
-    border: none;
-    float: none;
-}
+        .giftWrap label input {
+            display: none;
+        }
 
-#applyCoupan {
-    border-bottom: 1px solid #d6d6d6;
-    border-top: 1px solid #d6d6d6;
-    padding: 5px 0;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#applyCoupan p {
-    cursor: pointer;
-    font-weight: 400;
-    line-height: 28px;
-    color: #fc6486;
-    text-transform: uppercase;
-    display: inline-block;
-}
-#applyCoupan i {
-    font-size: 16px;
-    padding-right: 7px;
-}
-/* .fa, .fas {
+        input[type="checkbox"i] {
+            background-color: initial;
+            cursor: default;
+            appearance: auto;
+            box-sizing: border-box;
+            margin: 3px 3px 3px 4px;
+            padding: initial;
+            border: initial;
+        }
+
+        .giftWrap span {
+            font-size: 11px;
+            font-weight: normal;
+            display: inline-block;
+            color: #6e6e6e;
+            width: 85%;
+        }
+
+        .donation {
+            padding: 15px 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .donation p {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555555;
+        }
+
+        .donation label input {
+            display: none;
+        }
+
+        .donation label i {
+            /* justify-content: right; */
+            height: 20px;
+            width: 20px;
+            /* display: inline-block; */
+            position: relative;
+            float: right;
+
+            border: 1px solid #ccc;
+        }
+
+        .donation [type=checkbox]:checked+i:before {
+            content: '\2714';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 14px;
+            color: #fff;
+            background: #fc6486;
+            width: 17px;
+            height: 20px;
+            padding-left: 3px;
+        }
+
+        .donation span {
+            font-size: 11px;
+            font-weight: normal;
+            display: inline-block;
+            width: 85%;
+            color: #6e6e6e;
+        }
+
+        .donation label span i {
+            width: auto;
+            height: auto;
+            border: none;
+            float: none;
+        }
+
+        #applyCoupan {
+            border-bottom: 1px solid #d6d6d6;
+            border-top: 1px solid #d6d6d6;
+            padding: 5px 0;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #applyCoupan p {
+            cursor: pointer;
+            font-weight: 400;
+            line-height: 28px;
+            color: #fc6486;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        #applyCoupan i {
+            font-size: 16px;
+            padding-right: 7px;
+        }
+
+        /* .fa, .fas {
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
 } */
-/* .fa, .fab, .fad, .fal, .far, .fas {
+        /* .fa, .fab, .fad, .fal, .far, .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -512,117 +640,134 @@ input[type="checkbox" i] {
     text-rendering: auto;
     line-height: 1;
 } */
-applyCoupan p {
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 28px;
-    
-   
-    /* display: inline-block; */
-}
-#applyGiftCard {
-    border-bottom: 1px solid #d6d6d6;
-    border-top: 1px solid #d6d6d6;
-    
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#applyGiftCard p {
-    cursor: pointer;
-    
-    font-weight: 400;
-    line-height: 28px;
-   
-    
-    display: inline-block;
-}
-.przdlmain {
-    display: inline-block;
-}
-.prizeDetailbox {
-    display: inline-block;
-    width: 100%;
-}
-.prizeDetail {
-    width: 100%;
-    float: left;
-    padding: 4px 0;
-}
-.prizeDetail p {
-    float: left;
-    font-size: 14px;
-    color: #6e6e6e;
-}
-.prizeDetail i {
-    margin: 2px 2px 0 0;
-    float: left;
-}
-.prizeDetail span {
-    float: right;
-    font-size: 14px;
-    color: #6e6e6e;
-}
-.prizeDetail i {
-    margin: 2px 2px 0 0;
-    float: left;
-}
-.orderTotal {
-    width: 100%;
-    float: left;
-    padding: 10px 0;
-    margin-top: 8px;
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
-}
-.orderTotal p {
-    float: left;
-    font-size: 15px;
-}
-.orderTotal span {
-    float: right;
-    font-size: 15px;
-    /* font-weight: 400;
-    color: #fc6486; */
-}
-.orderTotal i {
-    margin: 2px 2px 0 0;
-    float: left;
-}
-.placeAnchr {
-    display: inline-block;
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-}
-.placeAnchr a {
-    background: #fc6486;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    width: 100%;
-    display: inline-block;
-    padding: 12px 0;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.shipdays {
-    margin-top: 20px;
-    font-size: 13px;
-    color: #4a4a4a;
-    border: 1px solid #efefef;
-    padding: 10px;
-}
+        applyCoupan p {
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 28px;
 
-/* .fa, .fas {
+
+            /* display: inline-block; */
+        }
+
+        #applyGiftCard {
+            border-bottom: 1px solid #d6d6d6;
+            border-top: 1px solid #d6d6d6;
+
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #applyGiftCard p {
+            cursor: pointer;
+
+            font-weight: 400;
+            line-height: 28px;
+
+
+            display: inline-block;
+        }
+
+        .przdlmain {
+            display: inline-block;
+        }
+
+        .prizeDetailbox {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .prizeDetail {
+            width: 100%;
+            float: left;
+            padding: 4px 0;
+        }
+
+        .prizeDetail p {
+            float: left;
+            font-size: 14px;
+            color: #6e6e6e;
+        }
+
+        .prizeDetail i {
+            margin: 2px 2px 0 0;
+            float: left;
+        }
+
+        .prizeDetail span {
+            float: right;
+            font-size: 14px;
+            color: #6e6e6e;
+        }
+
+        .prizeDetail i {
+            margin: 2px 2px 0 0;
+            float: left;
+        }
+
+        .orderTotal {
+            width: 100%;
+            float: left;
+            padding: 10px 0;
+            margin-top: 8px;
+            border-top: 1px solid #d6d6d6;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        .orderTotal p {
+            float: left;
+            font-size: 15px;
+        }
+
+        .orderTotal span {
+            float: right;
+            font-size: 15px;
+            /* font-weight: 400;
+    color: #fc6486; */
+        }
+
+        .orderTotal i {
+            margin: 2px 2px 0 0;
+            float: left;
+        }
+
+        .placeAnchr {
+            display: inline-block;
+            margin-top: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .placeAnchr a {
+
+            background: #fc6486;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            width: 100%;
+            display: inline-block;
+            padding: 12px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .shipdays {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #4a4a4a;
+            border: 1px solid #efefef;
+            padding: 10px;
+        }
+
+        /* .fa, .fas {
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
 } */
-/* ul {
+        /* ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -631,9 +776,9 @@ applyCoupan p {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 } */
-
     </style>
 </head>
+
 <body>
 
     <div id="head">
@@ -644,48 +789,48 @@ applyCoupan p {
                 </a>
             </div>
             <div id="shopingStep">
-             
-       
+
+
                 <ul>
                     <li>
                         <a href="www.cart.html" class="stepActive crpnt">
-                        <i class="fa fa-shopping-cart"></i>
-                        <br>
-                        bag
-                    </a>
+                            <i class="fa fa-shopping-cart"></i>
+                            <br>
+                            bag
+                        </a>
                     </li>
                     <li><a href="www.shipping.html" class="crpnt">
-                        <i class="fa fa-truck"></i>
-                        <br>
-                Shipping
-                    </a>
+                            <i class="fa fa-truck"></i>
+                            <br>
+                            Shipping
+                        </a>
                     </li>
                     <li>
-                        <a href="www.payment.html" >
-                        <i class="fa fa-credit-card"></i>
-                        <br>
-                        Payment
-                    </a>
+                        <a href="www.payment.html">
+                            <i class="fa fa-credit-card"></i>
+                            <br>
+                            Payment
+                        </a>
                     </li>
                 </ul>
-             </div>
+            </div>
             <div id="secureBox">
                 <ul>
                     <li>
                         <i class="fa fa-user"></i>
                         priyodas1997
-                </li>
-                
-</ul>
-                
-</div>
+                    </li>
 
-</div> 
-</div>
-<div class="ulbagMain" id="ulbagDesk">
-<div class="siteArea">
-<div class="bagLeftcntr">
-<input type="hidden" id="hdnAllowMoreItems" value="0">
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="ulbagMain" id="ulbagDesk">
+        <!-- <div class="siteArea"> -->
+            <div class="bagLeftcntr">
+                <!-- <input type="hidden" id="hdnAllowMoreItems" value="0">
 <div class="item-prize">
  <p>My Shopping</p>
 </div>
@@ -787,91 +932,98 @@ applyCoupan p {
  </div>
  <a href="/account/wishlist">
       <span>Add more from wishlist</span>
-     </a>
- </div>
-</div>
-<div class="bagRightcntr">
- <h3>Price Details</h3>
-<div class="optionBox" style="width:100%;box-sizing:border-box">
- <div class="applycoupanCntr">
- <div class="giftWrap" style="display:none">
- <p>Gift wrap for <i class="fal fa-rupee-sign">
+     </a> -->
+            <!-- </div> -->
+        </div>
+        <div class="bagRightcntr">
+            <h3>Price Details</h3>
+            <div class="optionBox" style="width:100%;box-sizing:border-box">
+                <div class="applycoupanCntr">
+                    <div class="giftWrap" style="display:none">
+                        <p>Gift wrap for <i class="fal fa-rupee-sign">
 
- </i>30</p><label> <input type="checkbox" id="chkGftWrp">
- <i>
+                            </i>30</p><label> <input type="checkbox" id="chkGftWrp">
+                            <i>
 
-</i> 
- <span>Cash On Delivery not applicable</span> 
- </label>
-</div>
-<div class="donation">
-<p>Donation</p>
- <label> 
-<input type="checkbox" id="chkDonation">
- <i>
-     <!-- ::before -->
- </i>
-  <span>Extra <i class="fal fa-rupee-sign"></i> 10 (This donation is towards NGO Ssrishti that is providing food and hygiene essentials to migrant labors during the COVID-19 lockdown)</span>
-  </label>
-   </div>  <div id="applyCoupan">
-   <p class="couponsShow" style="color:#000;text-transform:capitalize">
-  <i class="fa fa-plus-circle"></i> 
-   <span class="applyCoupan">Apply Coupon</span>
-   </p>
-  </div>
-  <div id="applyGiftCard" style="border-top:none">
-  <p class="ApplyGiftcard" style="color:#000;text-transform:capitalize">
-  <i class="fa fa-plus-circle" style="font-size:16px;margin-right:5px"></i>
-   <span>Redeem Gift Card</span>
-   </p>
-    </div>
-   </div>
- <div class="przdlmain" style="width:100%">
- <div class="prizeDetailbox">
-   <div class="prizeDetail">
-    <p>Sub Total</p>
-   <span> <i class="fal fa-rupee-sign"></i> 1050</span>
-   </div>
-    <div class="prizeDetail" style="display:none">
-    <p>Shipping</p>
-            <span> <i class="fal fa-rupee-sign"></i> 0</span>
-    </div>
-    <div class="prizeDetail" id="pzGiftWrap" style="display:none">
-    <p>Gift Wrap</p>
-    <span> <span class="gfwchrge"> <i class="fal fa-rupee-sign"></i> 0 </span>
-    </span>
-   </div>
-    <div class="prizeDetail" id="pzDonation" style="display: none;">
-    <p>Donation</p>
-    <span> <i class="fal fa-rupee-sign"></i> <span class="dotion"> 0</span>
-     </span>
-     </div>
-     <div class="orderTotal">
-         <p style="color:#323232;font-weight:600">Total</p>
-         <span style="color:#323232;font-weight:600"> 
-         <i class="fal fa-rupee-sign"></i> <span class="totlPrice" style="color:#323232;font-weight:600"> 1050 </span> 
-         </span>
-     </div>
-     </div>
-      <div class="placeAnchr">
-        <a href="javascript:void(0)" data-val="/checkout/shipping" id="plcOrder">Place Order</a>
-                 </div>
-                 </div>
-                 </div
-                 ><p class="shipdays">Estimated Delivery Time
-                     <br>
-                     <br> 
-                     India : 4-6 business days.
-                     <br>
-                      International: 7-12 business days.</p>
-                      </div>
-                      <div>
-                                                                                                                                
+                            </i>
+                            <span>Cash On Delivery not applicable</span>
+                        </label>
+                    </div>
+                    <div class="donation">
+                        <p>Donation</p>
+                        <label>
+                            <input type="checkbox" id="chkDonation">
+                            <i>
+                                <!-- ::before -->
+                            </i>
+                            <span>Extra <i class="fal fa-rupee-sign"></i> 10 (This donation is towards NGO Ssrishti that
+                                is providing food and hygiene essentials to migrant labors during the COVID-19
+                                lockdown)</span>
+                        </label>
+                    </div>
+                    <div id="applyCoupan">
+                        <p class="couponsShow" style="color:#000;text-transform:capitalize">
+                            <i class="fa fa-plus-circle"></i>
+                            <span class="applyCoupan">Apply Coupon</span>
+                        </p>
+                    </div>
+                    <div id="applyGiftCard" style="border-top:none">
+                        <p class="ApplyGiftcard" style="color:#000;text-transform:capitalize">
+                            <i class="fa fa-plus-circle" style="font-size:16px;margin-right:5px"></i>
+                            <span>Redeem Gift Card</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="przdlmain" style="width:100%">
+                    <div class="prizeDetailbox">
+                        <div class="prizeDetail">
+                            <p>Sub Total</p>
+                            <span> <i class="fal fa-rupee-sign"></i> 1050</span>
+                        </div>
+                        <div class="prizeDetail" style="display:none">
+                            <p>Shipping</p>
+                            <span> <i class="fal fa-rupee-sign"></i> 0</span>
+                        </div>
+                        <div class="prizeDetail" id="pzGiftWrap" style="display:none">
+                            <p>Gift Wrap</p>
+                            <span> <span class="gfwchrge"> <i class="fal fa-rupee-sign"></i> 0 </span>
+                            </span>
+                        </div>
+                        <div class="prizeDetail" id="pzDonation" style="display: none;">
+                            <p>Donation</p>
+                            <span> <i class="fal fa-rupee-sign"></i> <span class="dotion"> 0</span>
+                            </span>
+                        </div>
+                        <div class="orderTotal">
+                            <p style="color:#323232;font-weight:600">Total</p>
+                            <span style="color:#323232;font-weight:600">
+                                <i class="fal fa-rupee-sign"></i> <span class="totlPrice"
+                                    style="color:#323232;font-weight:600"> 1050 </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="placeAnchr">
+                        <a href="shipping.html" data-val="/checkout/shipping" id="plcOrder">Place Order</a>
+                    </div>
+                </div>
+            </div>
+            <p class="shipdays">Estimated Delivery Time
+                <br>
+                <br>
+                India : 4-6 business days.
+                <br>
+                International: 7-12 business days.
+            </p>
+        </div>
+        <div>
 
 
 
 
-    
-    
+
+
+
 </body>
+
 </html>
+<script src="script.js"></script>

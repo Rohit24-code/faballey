@@ -291,6 +291,7 @@
       name: "Pink Buttoned Pleated Dobby Peplum Top",
       price: "800",
       strikedoffprice: "₹1600",
+      colour:"Pink"
     },
     {
       image_url:
@@ -298,6 +299,7 @@
       name: "Olive Solid Belted Blouse ",
       price: "600",
       strikedoffprice: "₹1200",
+      colour:"olive"
     },
     {
       image_url:
@@ -305,6 +307,7 @@
       name: " Wine Embellish High Neck Top",
       price: "700",
       strikedoffprice: "₹1400",
+      colour:"Wine"
     },
     {
       image_url:
@@ -312,6 +315,7 @@
       name: "Pink Ditsy Floral Elasticated Sleeve Wrap",
       price: "750",
       strikedoffprice: "₹1500",
+      colour:"Pink"
     },
     {
       image_url:
@@ -549,7 +553,7 @@
     var img = document.createElement("img");
     img.src = elem.image_url;
 
-
+    var colour= elem.colour
 
     var name = document.createElement("p");
     name.textContent = elem.name;
