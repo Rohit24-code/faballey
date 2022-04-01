@@ -118,7 +118,9 @@
  .darkrose{
      background-color: #f8c9c8;
  }
-
+ #productsections a {
+    cursor: url(/themes/default/images/prozoomIcon.png),auto;
+}
 
 
 
