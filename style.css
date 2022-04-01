@@ -67,6 +67,25 @@
 .rightside div:last-child {
     border: none;
 }
+.bag{
+    margin-top: -50px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: #ccc;
+}
+
+.rightside svg{
+    margin-right: 15px;
+}
+ .hleft svg{
+    padding: 1px;
+    margin-right: 18px;
+    margin-top: -18%;
+}
+/* .search{ */
+    /* border: 1px solid red; */
+    /* margin-right: 60px; */
+/* } */
 
 
 .fab {
@@ -116,7 +135,7 @@
 }
 
 .headerbox {
-    padding: 60px 0 7px 0;
+    padding: 40px 0 7px 0;
 }
 
 .hright {
@@ -131,6 +150,7 @@
     max-width: 100%;
     border: none;
     display: block;
+    margin-top: 20px;
 }
 
 /* .hright img { */
@@ -139,14 +159,22 @@
 /* margin-left: 20px; */
 /* } */
 .hleft {
-    /* padding: 3px 7px;
+     padding: 3px 7px;
     font-size: 13px;
-    margin-right: 20px; */
+    margin-right: 20px; 
     float: right;
-    margin: 4px 15px 0 0;
+    margin: 10px 0px 0 0;
     position: relative;
     cursor: pointer;
     z-index: 2;
+    /* border: 1px solid teal; */
+    display: flex;
+    height: 40px;
+}
+
+select{
+    height: 25px;
+    width: 72px;
 }
 
 nav {
@@ -171,9 +199,9 @@ nav {
     background: #fff;
     z-index: 2;
     display: inline-block;
-    margin-left: 7%;
-    margin-top: 0%;
-    height: 20px;
+    margin-left: 16%;
+    margin-top: -2%;
+    height: 10px;
 }
 
 ul {
@@ -816,6 +844,9 @@ footer {
 .connecticon {
     /* border: 1px solid saddlebrown;/ */
     margin-top: 54px;
+}
+.menumain .menucntr ul li:hover{
+border-bottom: 4px solid rgb(242, 151, 166);
 }
 
 /* second last box   */
