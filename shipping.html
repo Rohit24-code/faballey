@@ -120,71 +120,389 @@ ul {
     margin-bottom: 10px;
 }
 .editAddres {
-    margin-bottom: 20px;
+    
     display: table;
     width: 100%;
+}
+.editAddres label {
+    margin-bottom: 5px;
+}
+
+.ulbagMain {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.editAddres label {
+    display: inline-table;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    /* margin-bottom: 10px; */
+    font-size: 13px;
+    font-weight: 500;
+}
+.editAddres input[type="text"] {
+    border: 1px solid #efefef;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #8a8a8a;
+}
+.bagftmain {
+    border-top: 1px solid #dcdcdc;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 30px;
+    display: inline-block;
+}
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.bagftbox li {
+    display: inline-block;
+    border-right: 2px solid #a2a2a2;
+    padding: 0 10px;
+}
+.bagftbox li a {
+    color: #4a4a4a;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.bagftbox p {
+    float: right;
+    color: #4a4a4a;
+    font-size: 15px;
+}
+.cl {
+    clear: both;
+    overflow: hidden;
+}
+.bagLeftcntr {
+    width: 62%;
+    float: left;
+    min-height: 460px;
+    height: 100%;
+}
+.item-prize {
+    padding: 15px 0;
+    display: inline-block;
+    width: 100%;
+}
+.item-prize p {
+    float: left;
+    font-size: 20px;
+    color: #555555;
+}
+.editAddresform {
+    width: 100%;
+}
+.editAddresbox {
+    border: 1px solid #efefef;
+    padding: 20px;
+}
+.editAddresbox h4 {
+    border-bottom: 1px solid #ececec;
+    padding: 15px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    display: none;
+}
+.editAddresbox form {
+    width: 100%;
+    box-sizing: border-box;
+}
+.editAddres span {
+    width: 50%;
+    vertical-align: top;
+    float: left;
+    box-sizing: border-box;
+    display: table-cell;
+    /* position: relative; */
+}
+.editAddres select {
+    border: 1px solid #efefef;
+    padding: 12px;
+    width: 100%;
+    background: url(../images/accArrow2.png) no-repeat right;
+    color: #8a8a8a;
+}
+.editAddres p {
+    display: inline-block;
+    color: #606060;
+    margin: 5px;
+}
+.editAddres label {
+    margin-bottom: 5px;
+}
+.editAddres textarea {
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 12px;
+    box-sizing: border-box;
+    color: #8a8a8a;
+    min-height: 100px;
+}
+i {
+    font-style: italic;
+}
+i {
+    font-family: Century Gothic,Helvetica,sans-serif;
+}
+
+element.style {
+    display: none;
+    color: #fc6486 !important;
+    font-size: 13px;
+}
+.mobileError {
+    color: red;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 10px;
+    display: block;
+}
+.formbtn input {
+    border-radius: 3px;
+    border: 1px solid #fc6486;
+    padding: 13px 50px;
+    background: #fc6486;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px 0 20px 0;
+}
+.bagRightcntr {
+    width: 35%;
+    float: right;
+    padding: 15px 0 40px 0;
+}
+.bagRightitle {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.bagRightcntr h3 {
+    font-size: 20px;
+    color: #555555;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.bagRightcntr h3 {
+    font-size: 20px;
+    color: #555555;
+    font-weight: 400;
+    
+}
+.bagRightitle h3 {
+    font-size: 20px;
+    color: #555555;
+    
+    float: left;
+    padding: 0 !important;
+}
+.bagRightitle a {
+    font-size: 14px;
+    color: #fc6486;
+    font-weight: 400;
+    float: right;
+    text-decoration: underline;
+    line-height: 22px;
+}
+a:-webkit-any-link {
+    
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.shpItems {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #efefef;
+}
+.shpItemsMain {
+    max-height: 270px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.shpItems img {
+    float: left;
+    max-width: 40px;
+}
+img {
+    border: none;
+}
+.shpItems span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 11px;
+    color: #4a4a4a;
+    line-height: 15px;
+    width: 80%;
+}
+.shipItemPrice {
+    margin-left: 5px !important;
+}
+.fal {
+    font-weight: 300;
+}
+.fal, .far {
+    font-family: "Font Awesome 5 Pro";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+element.style {
+    width: 100%;
+    box-sizing: border-box;
+}
+.optionBox {
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 5px;
+}
+.przdlmain {
+    display: inline-block;
+}
+.prizeDetailbox {
+    display: inline-block;
+    width: 100%;
+}
+.prizeDetail {
+    width: 100%;
+    float: left;
+    padding: 4px 0;
+}
+.prizeDetail p {
+    float: left;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+.prizeDetail i {
+    margin: 2px 2px 0 0;
+    float: left;
+}
+.orderTotal {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    margin-top: 8px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+.orderTotal p {
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fc6486;
+}
+.orderTotal i {
+    margin: 2px 2px 0 0;
+    
+}
+.shipdays {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #4a4a4a;
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+    display: none;
+}
+#loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+.confirmAddDelete {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 37%;
+    z-index: 2;
+}
+.addresspopup {
+    margin: 30px auto 0;
+    padding: 6px;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    z-index: 99999;
+}
+.addresspopupMsg {
+    border: 1px solid #333;
+    background: #eeeeee;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.sftchkPopmain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9;
+}
+.sftchkPopbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+}
+.sftchkPopbox p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.sftchkPopbox a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #fc6486;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 3px;
 }
 
     </style>
 </head>
 <body>
-    <!-- navbar -->
-    <!-- <div class="chkHeadmain">
-        <div class="ulbagMain">
-            <div class="checkoutHead">
-                <div class="mobLogo">
-                    <figure>
-                        <a href="/"> <img src="/images/mobile/moblogo.png" alt=""></a>
-                    </figure>
-                </div>
-                <span class="steps">Step 2/3</span>
-            </div>
-            <div class="shpStepsmain">
-                <div class="checkoutLogo">
-                    <a href="/"><img src="/images/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="secureBox">
-                    <i class="fa fa-user"></i>
-                    &nbsp;priyo.das.0607</div>
-                    <div class="cl">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shopingStep">
-            <ul>
-        <li>
-    <a href="/checkout/cart" class="crpnt">
-        <i class="fa fa-shopping-cart">
-
-        </i>
-        Bag</a>
-    </li>
-    <li>
-        <a href="javascript:void(0)">
-            <i class="fa fa-sign-in">
-
-            </i>login
-        </a>
-    </li>
-    <li>
-        <a href="/checkout/shipping" class="stepActive crpnt">
-            <i class="fa fa-truck">
-
-            </i>Shipping</a>
-        </li>
-        <li>
-            <a href="javascript:void(0)">
-                <i class="fa fa-credit-card">
-
-                </i>Payment</a>
-            </li>
-        </ul>
-    </div>
- -->
-
  <div id="head">
     <div id="midhead">
         <div id="logo">
@@ -197,20 +515,20 @@ ul {
    
             <ul>
                 <li>
-                    <a href="www.cart.html" class="stepActive crpnt">
+                    <a href="cart.html" class="stepActive crpnt">
                     <i class="fa fa-shopping-cart"></i>
                     <br>
                     bag
                 </a>
                 </li>
-                <li><a href="www.shipping.html" class="crpnt">
+                <li><a href="shipping.html" class="crpnt">
                     <i class="fa fa-truck"></i>
                     <br>
             Shipping
                 </a>
                 </li>
                 <li>
-                    <a href="www.payment.html" >
+                    <a href="payment.html" >
                     <i class="fa fa-credit-card"></i>
                     <br>
                     Payment
@@ -231,76 +549,186 @@ ul {
 
 </div> 
 </div>
-
-<!-- mainbox -->
 <div class="ulbagMain">
-    <div class="siteArea">
-        <div class="bagLsftcntr" >
-<div class=""item-prize>
-    <p>Where do you want us to deliver?</p>
-</div>
-
-<div class="editAddresform">
+<div class="siteArea">
+<div class="bagLeftcntr">
+    <div class="item-prize">
+        <p>Where do you want us to deliver?</p>
+    </div>
+    <input   id="HidNewAdd" name="IsNewAddress" type="hidden" value="True">
+    <div class="editAddresform">
     <div class="editAddresbox">
+        <h4>ADD NEW ADDRESS</h4>
+        <form  id="add-addnew" method="post" novalidate="novalidate">
+        <input name="__RequestVerificationToken" type="hidden" >
+        <div class="editAddField">
+            <div class="editAddres">
+                <span>
+         <label>Full name*</label> 
+         <input data-val="true"  id="FirstName" maxlength="99" name="FirstName" required="" type="text">
+          <span class="field-validation-valid" ></span>
+         </span> 
+         <span style="position:relative"> 
+            <label>Mobile number* <i class="mobileInter" style="display:none;color:#fc6486 !important;font-size:13px">(Do not prefix "0" or "+")</i>
+            </label>
+             <input data-val="true" data-val-regex="Only Number allowed" data-val-regex-pattern="([1-9][0-9]*)" data-val-required="(Please Enter Mobile)" id="add-phone" maxlength="10" minlength="10" name="Mobile" required="" type="text"> 
+             <span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span> 
+             <i class="mobileError" style="display:none">Only numbers are allowed. </i> 
+            </span>
+        </div>
+        <div class="editAddres"><span>
+             <label>Country*</label>
+     <select data-val="true" data-val-number="The field Country must be a number." data-val-required="(Please Enter Country)" id="Country" name="Country" required="">
+         <option value="">
+              Select Country </option>
+        <option value="7">Australia</option>
+        <option value="13">Belgium</option>
+        <option value="3">Canada</option>
+        <option value="22">China</option>
+        <option value="92">Fiji</option>
+        <option value="34">France</option>
+        <option value="36">Germany</option>
+        <option value="38">Greece</option>
+        <option value="93">Guyana</option>
+        <option value="40">Hong Kong</option>
+        <option value="41">Hungary</option>
+        <option selected="" value="1">India</option>
+        <option value="42">Indonesia</option>
+        <option value="43">Ireland</option>
+        <option value="45">Italy</option>
+        <option value="47">Japan</option>
+        <option value="51">Kuwait</option>
+        <option value="52">Malaysia</option>
+        <option value="87">Mauritius</option>
+        <option value="90">Nepal</option>
+        <option value="54">Netherlands</option>
+        <option value="55">New Zealand</option>
+        <option value="89">Nigeria</option>
+        <option value="60">Philippines</option>
+        <option value="67">Saudi Arabia</option>
+        <option value="88">Scotland</option>
+        <option value="68">Singapore</option>
+        <option value="71">South Africa</option>
+        <option value="72">Spain</option>
+        <option value="91">Sri Lanka</option>
+        <option value="73">Sweden</option>
+        <option value="74">Switzerland</option>
+        <option value="76">Thailand</option>
+        <option value="94">Trinidad and Tobago</option>
+        <option value="79">United Arab Emirates</option>
+        <option value="80">United Kingdom</option>
+        <option value="2">United States</option>
+    </select> 
+    <span class="field-validation-valid" data-valmsg-for="Country" data-valmsg-replace="true">
 
+    </span> 
+</span> 
+<span style="position:relative"> 
+    <label>Pin Code*</label> 
+    <input data-val="true" data-val-required="(Please Enter a valid Zip/Postal code)" id="add-pincode" maxlength="6" name="PinCode" required="" type="text">
+     <span class="field-validation-valid" data-valmsg-for="PinCode" data-valmsg-replace="true">
+
+     </span> 
+     <i class="pincodeError" style="display:none">&nbsp; </i> 
+    </span></div><div class="editAddres">
+        <label>Address*</label>
+         <textarea cols="20" data-val="true" data-val-required="(Please Enter Address)" id="addaddress" name="Address" required="" rows="2">
+
+         </textarea> 
+         <span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span> 
+         <i class="addressError" style="display:none"> Special characters allowed are -,.#/ 
+        </i>
     </div>
-</div>
+    <div id="citystate" class="editAddres" style="display: none;"><span>
+         <label>City*</label> 
+         <input data-val="true" data-val-required="(Please Enter City)" id="add-city" name="City" required="" type="text" readonly="readonly"> 
+         <span class="field-validation-valid" data-valmsg-for="City" data-valmsg-replace="true"></span>
+         </span> <span id="stattxt"> 
+             <label>State*</label>
+              <input id="State" name="StateName" required="" type="text" readonly="readonly">
+               <span class="field-validation-valid" data-valmsg-for="StateName" data-valmsg-replace="true">
 
+               </span> 
+            </span>
+             <span id="statedrop" style="display:none"> 
+                <label>State*</label> 
+                <select id="StateDDL" required="required">
+
+                </select>
+                <div style="color:red;display:none" id="msg_id">This field is required.
+                </div>
+            </span> 
+            <input id="hdstateName" name="StateName" type="hidden"> 
+            <input data-val="true" data-val-number="The field State must be a number." data-val-required="(Please Enter State)" id="hdstate" name="State" type="hidden" value="0">
+        </div>
+        <div class="editAddres">
+            <input checked="" data-val="true" data-val-required="The DefaultAddress field is required." id="DefaultAddress" name="DefaultAddress" type="checkbox" value="true">
+            <input name="DefaultAddress" type="hidden" value="false">
+            <p>Make this my default address</p>
         </div>
     </div>
+    <div class="formbtn" dataval="FAB0808080808LLY">
+        <input class="dfaddrs" type="submit" value="Deliver to this address" data-add-id="new" id="addnewAdd" enabled="true"> 
+        <input type="hidden" name="hastoken" id="hastoken">
+    </div>
+</form>
 </div>
- <div class="bagRightcntr">
-<div class="bagRightitle">
-<h3>Product Details</h3>
-<a href="/checkout/cart">Edit Bag</a>
 </div>
-<div class="shpItemsMain">
-    <div class="shpItems" data-var-qnty="1" data-style="BOT00593" data-name="Wine Waist Zip Jeggings " data-currency="INR" data-variant="BOT00593B" data-category="Clothing/Bottoms/Leggings &amp; Jeggings" data-price="1050.00" data-brand="faballey">
-        <img src="https://img.faballey.com/images/Product/BOT00593A/1.jpg"> 
-        <span>Wine Waist Zip Jeggings <br>
-             Sku : BOT00593B<br> 
-             Qty : 1 <span class="shipItemPrice"> 
-                 Price : <i class="fal fa-rupee-sign"></i> 
-                 1050 </span> 
-                </span>
+</div>
+<div class="bagRightcntr">
+    <div class="bagRightitle">
+        <h3>Product Details</h3>
+        <a href="cart.html"> Edit Bag</a>
+    </div>
+    <div class="shpItemsMain">
+        <div class="shpItems" data-var-qnty="1" data-style="BOT00593" data-name="Wine Waist Zip Jeggings " data-currency="INR" data-variant="BOT00593B" data-category="Clothing/Bottoms/Leggings &amp; Jeggings" data-price="1050.00" data-brand="faballey">
+            <img src="https://img.faballey.com/images/Product/BOT00593A/1.jpg"> 
+            <span>Wine Waist Zip Jeggings <br> Sku : BOT00593B<br> Qty : 1 <span class="shipItemPrice"> Price : <i class="fal fa-rupee-sign">
+
+            </i> 
+            1050 
+        </span>
+     </span>
+    </div>
+</div>
+<h3>Price Details</h3>
+<div class="optionBox" style="width:100%;box-sizing:border-box">
+    <div class="przdlmain" style="width:100%">
+        <div class="prizeDetailbox">
+            <div class="prizeDetail">
+        <p>Sub Total</p>
+        <span>
+    <i class="fal fa-rupee-sign">
+
+    </i> 1050</span>
+</div>
+<div class="prizeDetail" id="bill-shippment-charge" style="display:none">
+    <p>Shipping</p>
+    <span>
+        <i class="fal fa-rupee-sign">
+
+        </i> 0</span>
+    </div>
+    <div class="prizeDetail">
+        <p>Donation</p>
+        <span>
+             <i class="fal fa-rupee-sign">
+
+             </i> 10</span>
             </div>
-        </div>
-        <h3>Price Details</h3>
-        <div class="optionBox" style="width:100%;box-sizing:border-box">
-            <div class="przdlmain" style="width:100%">
-                <div class="prizeDetailbox">
-                    <div class="prizeDetail">
-                        <p>Sub Total</p>
-                        <span>
-                            <i class="fal fa-rupee-sign">
-
-                            </i>
-                             1050</span>
-                            </div>
-                            <div class="prizeDetail" id="bill-shippment-charge" style="display:none">
-                                <p>Shipping</p>
-                                <span>
-                                    <i class="fal fa-rupee-sign"></i> 
-                                    0</span>
-                                </div>
-                                <div class="prizeDetail">
-                                    <p>Donation</p>
-                                    <span>
-                                         <i class="fal fa-rupee-sign">
-
-                                         </i> 
-                                         10</span>
-                                        </div>
-                                        <div class="orderTotal">
-                                            <p>Total</p>
-                                            <span> 
-                                                <i class="fal fa-rupee-sign" style="float:none">
-                            </i> 1060 </span>
-            </div>
-        </div>
+            <div class="orderTotal">
+                <p>Total</p><span> 
+            <i class="fal fa-rupee-sign" style="float:none">
+            </i> 
+            1060 
+        </span>
     </div>
 </div>
-<p class="shipdays">Estimated Delivery Time<br><br> India : 4-6 business days.<br> International: 7-12 business days.</p>
+</div>
+</div>
+<p class="shipdays">
+    Estimated Delivery Time<br><br> India : 4-6 business days.<br> International: 7-12 business days.
+</p>
 </div>
 <div class="cl">
 
@@ -310,8 +738,5 @@ ul {
 
 </div>
 </div>
-</div> 
-
-
 </body>
 </html>
