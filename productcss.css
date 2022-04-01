@@ -96,9 +96,10 @@
     justify-content: space-around;
     align-items: center;
     margin: 5px 0 5px 0;
+   
 }
 .thirdheader a{
-    padding: 7px;
+    padding: 7px; 
     text-align: center;
 
 }
@@ -107,9 +108,8 @@
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    width: 500px;
+    width: 100%;
     height: 36px;
-    /* border:1px solid teal; */
     text-align: center;
 }
  .rose{
