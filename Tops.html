@@ -1581,7 +1581,7 @@ var TopsData = [
 ];
 
 
-var cartData = JSON.parse(localStorage.getItem("cart")) || []
+var cartData = JSON.parse(localStorage.getItem("completedbag")) || []
 
 TopsData.map(function (elem) {
 var box = document.createElement("div");
@@ -1593,6 +1593,9 @@ img.src = elem.image_url;
 
 var name = document.createElement("p");
 name.textContent = elem.name;
+name.addEventListener("click",function(){
+      productclick(elem)
+})
 
 var price = document.createElement("h4");
 price.innerText = elem.price ;
@@ -1600,16 +1603,17 @@ price.innerText = elem.price ;
 var strikedoffprice = document.createElement("h5");
 strikedoffprice.innerText =  elem.strikedoffprice; 
 
+
 box.append(img, name, price, strikedoffprice);
 
 document.querySelector("#container").append(box);
 });
 
   var arr=JSON.parse(localStorage.getItem("completedbag")) || []
- function cartclick(elem){
+ function productclick(elem){
       arr.push(elem)
     localStorage.setItem("completedbag",JSON.stringify(arr))
-    window.location.href="cart.html"
+    window.location.href="product page.html"
   }
 
 
