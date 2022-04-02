@@ -62,4 +62,11 @@ cartdata.map(function (elem) {
 
    box.append(divone, havetwo)
    container.append(box,last)
-})
+});
+
+var total = cartdata.reduce(function(sum,elem,index,arr){
+   return sum+Number(elem.price);
+},0);
+document.querySelector("#subTotal").innerText=total;
+
+document.querySelector(".totlPrice").innerText=total;

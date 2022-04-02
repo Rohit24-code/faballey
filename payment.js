@@ -32,3 +32,11 @@ payment.map(function (elem) {
     addDiv.append(newdiv);
 
 });
+var cartdata = JSON.parse(localStorage.getItem("completedbag"))
+
+var total = cartdata.reduce(function(sum,elem,index,arr){
+    return sum+Number(elem.price);
+ },0);
+ document.querySelector("#subTotal").innerText=total;
+ 
+ document.querySelector(".totlPrice").innerText=total;

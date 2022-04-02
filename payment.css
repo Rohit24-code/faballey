@@ -1,128 +1,128 @@
 
-        .chkHeadmain {
+.chkHeadmain {
+    width: 100%;
+    background: #f4f4f4;
+}
+
+#head {
+            height: 70px;
             width: 100%;
             background: #f4f4f4;
-        }
-        
-        #head {
-                    height: 70px;
-                    width: 100%;
-                    background: #f4f4f4;
-                   } 
-        
-                * {
-                    margin: 0;
-                   padding: 0;
-                    
-                }
-        
-            #midhead {
-            display:flex;
-            height: 80px;
-            width:100%; 
-            margin: auto;
-            margin-top:0px;
-            justify-content: space-around;
+           } 
+
+        * {
+            margin: 0;
+           padding: 0;
             
         }
-        
-           #midhead  div {
-         display:flex;
-         height: 80%;
-         width: 30%;
-         justify-content: space-around;
-         
-        
-         }
-        #logo>a{
-            margin: auto;
-        }
-        
-         #logo img {
-             margin: auto;
-            height: 20px;
-            padding: 30;
-            
-            
-        } 
-        
-        ul {
-            display: flex; 
-             justify-content: space-around; 
-            list-style-type:none;
-            margin: auto;
-        
-          
-        }
-           #shopingStep li {
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
+
+    #midhead {
+    display:flex;
+    height: 80px;
+    width:100%; 
+    margin: auto;
+    margin-top:0px;
+    justify-content: space-around;
     
 }
+
+   #midhead  div {
+ display:flex;
+ height: 80%;
+ width: 30%;
+ justify-content: space-around;
+ 
+
+ }
+#logo>a{
+    margin: auto;
+}
+
+ #logo img {
+     margin: auto;
+    height: 20px;
+    padding: 30;
+    
+    
+} 
+
+ul {
+    display: flex; 
+     justify-content: space-around; 
+    list-style-type:none;
+    margin: auto;
+
   
+}
+   #shopingStep li {
+display: inline-block;
+font-size: 14px;
+text-align: center;
+text-decoration: none;
+
+}
+
 #shopingStep li a{
-    color: #adadad;
-    padding: 10px 20px; 
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    
-    
+color: #adadad;
+padding: 10px 20px; 
+display: inline-block;
+cursor: pointer;
+text-decoration: none;
+
+
 
 }
 
 #secureBox{
-    
-    font-size: 14px;
-    float: right;
-    color: #adadad;
-    line-height: 30px;
-    
+
+font-size: 14px;
+float: right;
+color: #adadad;
+line-height: 30px;
+
 }
 #secureBox li{
-    text-align: center;
-    margin: auto;
+text-align: center;
+margin: auto;
 }
-                                        /* below header   */
+                                /* below header   */
 
 .headtwo{
-    /* border: 1px solid brown; */
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 200px;
-    padding-left: 160px;
-    color: #999797;
-    margin-bottom: 20px;
-    margin-top: 10px;
+/* border: 1px solid brown; */
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: center;
+padding-right: 200px;
+padding-left: 85px;
+color: #999797;
+margin-bottom: 20px;
+margin-top: 10px;
 }
 .bigcontainer{
-    width: 90%;
-    /* border: 1px solid red; */
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
+width: 90%;
+/* border: 1px solid red; */
+margin: auto;
+display: flex;
+justify-content: space-around;
 
 }
 .bigone{
 border: 1px solid #ccc;
 }
 .bigone div{
-    border: 1px solid #ccc;
-    /* margin: 10px; */
-    padding: 10px;
-    background-color: #f4f4f4;
+border: 1px solid #ccc;
+/* margin: 10px; */
+padding: 10px;
+background-color: #f4f4f4;
 }
 .bigtwo{
 border: 1px solid #ccc;
 width: 450px;
 }
 .top{
-    width: 100%;
-    /* border: 1px solid seagreen; */
+width: 100%;
+/* border: 1px solid seagreen; */
 
 }
 /* .bigthree{ */
@@ -130,11 +130,11 @@ width: 450px;
 
 /* } */
 .bigtwo>.top>h4{
-    /* padding-right: 40px; */
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: rgb(172, 167, 167);
+/* padding-right: 40px; */
+margin-left: 40px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: rgb(172, 167, 167);
 }
 
 .input{
@@ -143,87 +143,288 @@ padding: 5px;
 margin-top: 20px;
 }
 .input input{
-    width: 80%;
-    margin-left: 30px;
-    padding: 5px;
+width: 80%;
+margin-left: 30px;
+padding: 5px;
 
 }
 
 .input input::placeholder{
-    font-size: 17px;
+font-size: 17px;
 }
 
 .threeinput{
-    width: 80%;
-    margin: 20px 20px 0 30px;
-    /* border: 1px solid purple; */
-    padding: 5px;
+width: 80%;
+margin: 20px 20px 0 30px;
+/* border: 1px solid purple; */
+padding: 5px;
 }
 .threeinput input{
-    width: 15%;
-    height: 30px;
-    margin-right: 30px;
+width: 15%;
+height: 30px;
+margin-right: 30px;
 }
 /* .threeinput svg{
-    padding: 10px;
+padding: 10px;
 } */
 
 .btn{
-    background-color: pink;
-    color: white;
-    width: 400px;
-    height: 50px;
-    margin-left: 16px;
-    border: none;
-    margin-top: 30px;
-    margin-bottom: 70px;
+background-color: pink;
+color: white;
+width: 400px;
+height: 50px;
+margin-left: 16px;
+border: none;
+margin-top: 30px;
+margin-bottom: 70px;
 }
 .btn a{
-    color: #f4f4f4;
-    font-size: 20px;
-    text-decoration: none;
+color: #f4f4f4;
+font-size: 20px;
+text-decoration: none;
 }
 /* .bottomtwo{ */
-    /* border: 1px solid brown; */
+/* border: 1px solid brown; */
 /* } */
 .safe div{
-    display: flex;
-    /* border: 1px solid springgreen; */
-    justify-content: space-between;
+display: flex;
+/* border: 1px solid springgreen; */
+justify-content: space-between;
 }
 .safe div div p{
-    font-size: 12px;
-    color: rgb(146, 145, 145);
+font-size: 12px;
+color: rgb(146, 145, 145);
 }
 .img img{
-    width: 450px;
-    margin-top: 5px;
+width: 450px;
+margin-top: 5px;
 }
 .secondbottom{
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 5px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+margin-top: 20px;
+text-align: center;
+border: 1px solid #ccc;
+padding: 5px;
+padding-top: 14px;
+padding-bottom: 14px;
 }
 .bottom{
-    display: flex;
-    justify-content: space-around;
-    color: #413f3f;
+display: flex;
+justify-content: space-around;
+color: #413f3f;
 }
 
 .bigthree{
-    border: 1px solid black;
-    width: 25%;
+border: 1px solid black;
+width: 25%;
 }
-.bigthree div{
-    border: 1px solid #ccc;
-}
+/* .bigthree div{
+border: 1px solid #ccc;
+} */
 .bigthreefirst{
-    padding: 10px;
+padding: 10px;
 }
 .bigthreefirst p{
-    /* border: 1px solid #ccc; */
-    margin-top: 8px;
+/* border: 1px solid #ccc; */
+margin-top: 8px;
+font-size: 14px;
+}
+.optionBox {
+display: inline-block;
+background: #f4f4f4;
+/* padding: 20px; */
+}
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 12px;
+color: #000;
+}
+.giftWrap {
+padding: 0 0 10px 0;
+display: inline-block;
+width: 100%;
+border-bottom: 1px solid #ececec;
+}
+.giftWrap p {
+font-size: 14px;
+font-weight: bold;
+display: inline-block;
+color: #555555;
+}
+label {
+cursor: default;
+}
+input {
+writing-mode: horizontal-tb !important;
+text-rendering: auto;
+color: -internal-light-dark(black, white);
+letter-spacing: normal;
+word-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+}
+.donation {
+padding: 15px 0;
+display: inline-block;
+width: 100%;
+}
+.donation p {
+display: inline-block;
+font-size: 14px;
+font-weight: bold;
+color: #555555;
+}
+abel {
+cursor: default;
+}
+input[type="checkbox"i] {
+background-color: initial;
+cursor: default;
+appearance: auto;
+box-sizing: border-box;
+margin: 3px 3px 3px 4px;
+padding: initial;
+border: initial;
+}
+.donation label input {
+display: none;
+}
+.donation label i {
+/* justify-content: right; */
+height: 20px;
+width: 20px;
+/* display: inline-block; */
+position: relative;
+float: right;
+border: 1px solid #ccc;
+}
+.donation span {
+font-size: 11px;
+font-weight: normal;
+display: inline-block;
+width: 85%;
+color: #6e6e6e;
+}
+
+#applyCoupan {
+border-bottom: 1px solid #d6d6d6;
+border-top: 1px solid #d6d6d6;
+padding: 5px 0;
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+}
+#applyCoupan p {
+cursor: pointer;
+font-weight: 400;
+line-height: 28px;
+color: #fc6486;
+text-transform: uppercase;
+display: inline-block;
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+display: var(--fa-display,inline-block);
+font-style: normal;
+font-variant: normal;
+line-height: 1;
+text-rendering: auto;
+}
+#applyCoupan p {
+cursor: pointer;
+font-weight: 400;
+line-height: 28px;
+/* color: #fc6486; */
+/* text-transform: uppercase; */
+display: inline-block;
+}
+#applyGiftCard {
+border-bottom: 1px solid #d6d6d6;
+border-top: 1px solid #d6d6d6;
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+}
+.applyGiftCard p {
+cursor: pointer;
+font-weight: 400;
+line-height: 28px;
+display: inline-block;
+}
+.prizeDetailbox {
+display: inline-block;
+width: 100%;
+}
+.prizeDetail {
+width: 100%;
+float: left;
+padding: 4px 0;
+}
+.prizeDetail p {
+float: left;
+font-size: 14px;
+color: #6e6e6e;
+}
+.prizeDetail span {
+float: right;
+/* font-size: 14px; */
+color: #6e6e6e;
+margin-top: 8px;
+}
+.orderTotal {
+width: 100%;
+float: left;
+padding: 10px 0;
+margin-top: 8px;
+border-top: 1px solid #d6d6d6;
+border-bottom: 1px solid #d6d6d6;
+}
+.orderTotal p {
+float: left;
+font-size: 15px;
+}
+.orderTotal span {
+float: right;
+font-size: 15px;
+margin-top: 4px;
+}
+.placeAnchr {
+display: inline-block;
+margin-top: 15px;
+text-align: center;
+width: 100%;
+}
+.placeAnchr a {
+background: #fc6486;
+color: #fff;
+font-size: 18px;
+font-weight: 300;
+width: 100%;
+display: inline-block;
+padding: 12px 0;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-decoration: none;
+}
+
+element.style {
+width: 100%;
+box-sizing: border-box;
+}
+:host, :root {
+--fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+
+:host, :root {
+--fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+:host, :root {
+--fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
 }
