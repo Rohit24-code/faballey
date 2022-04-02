@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dresses</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+#Box {
+display: flex;
+margin-left: 8%;
+
+}
+.topmost {
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 36px;
+    background: #fff;
+    top: 0;
+    z-index: 99999;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 11PX;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 38px;
+    color: #323232;
+    font-family: 'Lato';
+}
+
+.exleft {
+    margin-left: 20px;
+}
+
+.exright {
+    margin-right: 20px;
+}
+
+.inside {
+    height: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid rgb(41, 38, 38);
+
+}
+
+.rightside {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    width: 290px;
+    height: 20px;
+}
+
+.rightside div {
+    border-right: 1px solid rgb(37, 36, 36);
+    height: 16px;
+    padding-right: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.rightside div a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: -10px;
+}
+
+.rightside div:last-child {
+    border: none;
+}
+
+
+.fab {
+    background-color: black;
+    height: 36px;
+    width: 100px;
+}
+
+.fab img {
+
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 15px;
+
+}
+
+.pink {
+    color: #fc6486;
+}
+
+/* second navbar */
+
+.topmost-2 {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 7px;
+}
+
+.hmiddle {
+    width: auto;
+    display: flex;
+    margin: 5px;
+}
+
+.hmiddle div {
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 8px;
+    border-bottom: 4px solid transparent;
+    font-size: 11.5px;
+    line-height: 18px;
+
+}
+
+.headerbox {
+    padding: 60px 0 7px 0;
+}
+
+.hright {
+    max-width: 170px;
+    width: 100%;
+    margin-left: 15px;
+    float: left;
+    /* position: relative; */
+}
+
+.hright img {
+    max-width: 100%;
+    border: none;
+    display: block;
+}
+
+
+.hleft {
+    /* padding: 3px 7px;
+    font-size: 13px;
+    margin-right: 20px; */
+    float: right;
+    margin: 4px 15px 0 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav {
+    display: block;
+
+}
+
+.menumain {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+
+.menucntr {
+    background: #fff;
+    z-index: 2;
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 0%;
+    height: 20px;
+}
+
+ul {
+    background: #fff;
+    z-index: 2;
+    display: inline-block;
+    margin-left: -23%;
+    position: relative;
+    margin-top: -6px;
+}
+
+.lvl-1>li {
+    float: left;
+    display: block;
+    list-style: none;
+}
+
+.lvl-1>li>a {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 11.5px;
+    line-height: 18px;
+    overflow: visible;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #323232;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* MEGA MENU  */
+
+
+.menucntr ul li .sub-menu {
+    position: absolute;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    left: 0;
+    right: 0;
+    /* visibility: hidden; */
+}
+
+
+
+.menucntr ul li .sub-menu .col {
+    display: flex;
+    justify-content: space-around;
+  
+    width: 140.8%;
+    background-color: white;
+    margin-left: -20%;
+    visibility: hidden;
+
+}
+
+
+.menucntr ul li :hover .col {
+    visibility: visible;
+}
+
+
+.thirdheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -15px 0 5px 0;
+}
+
+.thirdheader a {
+    padding: 7px;
+    text-align: center;
+
+}
+
+.thirdheader div {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 500px;
+    height: 36px;
+    /* border:1px solid teal; */
+    text-align: center;
+}
+
+.rose {
+    background-color: #ffe9e5;
+}
+
+.darkrose {
+    background-color: #f8c9c8;
+}
+#topsection {
+
+display: inline-block;
+vertical-align: top;
+width: 100%;
+height: 400px;
+max-width: 220px;
+margin-top: 100px;
+box-sizing: border-box;
+padding: 0 0 0 0;
+
+
+}
+
+h4 {
+
+color: #fc6486;
+font-size: 16px;
+}
+
+h5 {
+
+text-decoration: line-through;
+}
+
+.list-choice{
+
+width:220px;
+margin:auto;
+position: relative; 
+cursor: pointer;  
+font-family: 'lato';
+font-size: 13.28px;
+box-sizing: border-box solid;
+}
+.list-choice input[type="radio"]{
+position:absolute;
+left:-9999px;
+
+font-family: 'lato';
+font-size: 13.28px;
+}
+
+.list-choice-title {
+width: 100%;
+display: block;
+background:none;
+text-align: left;
+padding: 0 1em 0 0;
+box-sizing: border-box;
+color:black;
+text-shadow: none ;
+border-radius: 0.2em;
+font-family: 'lato';
+font-size: 13.28px;
+box-sizing: border-box solid;
+}
+.list-choice:hover .list-choice-title {
+border-radius:0.2em 0.2em 0 0;
+}
+.list-choice-objects label:nth-last-of-type(1) span{
+border-radius:0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+color: black;
+background: white ;
+width:220px;
+padding: 0;
+display: block;
+text-align:  center;
+box-sizing: border-box;
+cursor: pointer;
+width: 100%;
+font-family: 'lato';
+font-size: 13.28px;
+box-sizing: border-box solid;
+}
+.list-choice-objects {
+position: absolute;
+top: 0;
+padding-top: 3.1em;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+max-height: 0;
+font-family: 'lato';
+font-size: 13.28px;
+transition: all 250ms ease;
+box-sizing: border-box solid;
+}
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+
+transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+background: rgb(231, 228, 228);
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:none;
+}
+.list-choice input[type="radio"]:checked + span {
+background: none;
+position: absolute;
+
+border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+.bottom{
+
+
+height: 50px;
+text-align: center;
+width: 30%;
+border: 1px solid #fc6486;
+margin: auto;
+cursor: pointer;
+margin-bottom: 40px;
+
+padding: 10px 10px 10px 10px;
+}
+.bottom p{
+  font-family:'lato';
+  font-size: 16px;
+  color: #fc6486;
+   
+}
+
+#container {
+
+display: flex;
+flex-wrap: wrap;
+padding-left: 50px;
+float: right;
+width: 78%;
+justify-content: space-around;
+margin-top: 100px;
+
+
+
+}
+#container div{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border: none;
+margin: 0px 5px 0px 0px;
+margin-right: 5px;
+height: 560px;
+border-radius: 8px;
+}
+
+#container  div button {
+background-color: #fc6486;
+color: white;
+border-radius: 5px;
+padding: 1px 10px 1px 10px;
+margin-top:none ;
+margin-bottom: 20px;
+
+box-shadow: 2.5px 5px #888888;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 strike {
+color: rgb(68, 65, 65);
+margin-left: 12px;
+font-size: 16px;
+}
+
+#topsection>div>h2 {
+
+color: #fc6486;
+font-size: 24px;
+
+}
+
+#topsection>div {
+color: black;
+border-bottom: 1px solid grey;
+padding: 8px;
+}
+
+#topsection>div>h3 {
+cursor: pointer;
+font-size: 13.28px;
+}
+
+#container div+div {
+list-style: none;
+flex: 0 0 32%;
+margin-bottom: 80px;
+}
+
+#container>div>p {
+cursor: pointer;
+font-size:13.28px;
+}
+
+select.minimal {
+background-image:
+linear-gradient(45deg, transparent 100%),
+linear-gradient(135deg, transparent 100%),
+linear-gradient(to right);
+background-position:
+calc(100% - 20px) calc(1em + 2px),
+calc(100% - 15px) calc(1em + 2px),
+calc(100% - 2.5em) 0.5em;
+background-size:
+5px 5px,
+5px 5px,
+1px 1.5em;
+background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+background-image:
+linear-gradient(45deg, transparent 100%),
+linear-gradient(135deg, transparent 100%, ),
+linear-gradient(to right);
+background-position:
+calc(100% - 15px) 1em,
+calc(100% - 20px) 1em,
+calc(100% - 2.5em) 0.5em;
+background-size:
+5px 5px,
+5px 5px,
+1px 1.5em;
+background-repeat: no-repeat;
+border-color: none;
+outline: 0;
+}
+
+.maincenter {
+    max-width: 1200px;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    margin: auto;
+}
+
+.txtcenter {
+    padding-top: 20px;
+}
+
+.txtcenter span {
+    position: relative;
+    background: #fbfbfb;
+    padding-right: 5px;
+}
+
+.txtcenter h1 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.txtcenter h1 ::before {
+    content: "";
+    position: absolute;
+    background: #dcdcdc;
+    width: 240%;
+    height: 1px;
+    top: 50%;
+}
+
+.txtcenter h1 span {
+    position: relative;
+    background: #fbfbfb;
+    padding-right: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+  
+.ftrtextscroll {
+    height: 115px;
+    overflow-y: scroll;
+}
+
+.ftrtextscroll p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.ftrtextscroll h2 {
+    font-size: 15px;
+    text-transform: none;
+}
+
+footer {
+    background-color: rgb(255, 254, 254);
+}
+
+.maincenter .googleplay {
+    padding-top: 20px;
+    display: flex;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.maincenter div img {
+    width: 825px;
+    height: 105px;
+    margin-bottom: 25px;
+}
+
+.googleplay {
+    margin-top: 10px;
+  
+}
+
+.footerimg {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.googleplay h2 {
+    background: #fbfbfb;
+    padding-right: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.googleplay :nth-child(2) {
+
+    width: 100%;
+    display: inline;
+}
+
+.googleplay :nth-child(2) h2 {
+ 
+    text-align: center;
+}
+
+.googleplay :nth-child(2) div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.googleplay :nth-child(2) img {
+    width: 130px;
+    height: 40px;
+}
+
+/* fotter vla text below scroll  */
+
+.faballeycsr {
+    display: flex;
+    border-bottom: 1px solid rgb(202, 197, 197);
+    justify-content: space-evenly;
+    text-align: center;
+    width: 92%;
+    margin: auto;
+    
+}
+
+.faballeycsr h2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.faballeycsr p {
+    line-height: 8px;
+    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    ;
+}
+
+.btn {
+    background-color: #323232;
+    color: #dcdcdc;
+    padding: 12px;
+    border-radius: 0;
+}
+
+.input {
+    width: 240px;
+    margin: 5px;
+}
+
+.help {
+    display: inline-block;
+    
+    min-height: 200px;
+    width: 44%;
+    border-right: 1px solid #dcdcdc;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+.firstcom {
+    border-right: 1px solid #dcdcdc;
+    text-align: left;
+    padding-right: 50px;
+}
+
+/* .newsletter{ */
+/* border: 1px solid palevioletred; */
+/* } */
+.havetwo {
+    
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.newsletter {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.company {
+    margin-top: 10px;
+   
+}
+
+.companyone {
+    margin-top: 10px;
+    
+}
+
+.connecticon {
+    
+    margin-top: 54px;
+}
+
+/* second last box   */
+
+.threediv {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    border-bottom: 1px solid #dcdcdc;
+    width: 94%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.threediv p {
+    line-height: 8px;
+    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    ;
+}
+
+.head {
+    
+    width: 350px;
+    margin-top: 15px;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 15px;
+}
+
+.insidehead {
+    margin-top: 25px;
+}
+
+.insidehead h2 {
+    margin-bottom: 25px;
+}
+
+.return {
+ 
+    margin-top: 35px;
+    padding-right: 25px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.return h2 {
+    margin-bottom: 45px;
+}
+
+.return p {
+    width: 200px;
+}
+
+.payment {
+  
+    margin-top: 35px;
+    width: 400px;
+}
+
+.threediv h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.secondlast {
+    border-bottom: 1px solid #dcdcdc;
+    margin: auto;
+    width: 88%;
+    padding-top: 15px;
+}
+
+.secondlast h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 16px 0 16px 0;
+}
+
+.secondlast p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    text-indent: 68px;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="topmost">
+        <div class="pink exleft"> SALE | UPTO 60% Off.
+            <span style="color: black;">shop now></span>
+        </div>
+        <div class="inside">
+            <div class="fab"><img src="https://static.faballey.com/images/indya/fabwht.png?v=11.8" alt=""></div>
+            <div style="height: 20px; display: flex; justify-content: center;"><img
+                    src="https://static.faballey.com/images/indya/indblk.png?v=11.8" alt=""></div>
+        </div>
+        <div class="rightside">
+            <div><a>Track Order</a></div>
+            <div><a>Gift Card</a></div>
+            <div class="login"><a href="login.html">Login</a></div>
+            <div><a href="singup.html">Sign Up</a></div>
+            <div></div>
+        </div>
+
+
+    </div>
+    <!-- second nav bar -->
+    <div class="headerbox">
+        <div class="hleft">
+            <select class="currency">
+                <option value="₹INR">₹INR</option>
+                <option value="USD">$USD</option>
+                <option value="CAD">$CAD</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">$AUD</option>
+                <option value="SGD">$SGD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <div class="hright"><img src="https://static.faballey.com/images/logo.png?v=11.8" alt=""></div>
+    </div> 
+
+     <nav class="menumain">
+        <div class="menucntr">
+            <ul class="lvl-1">
+                <li class="firstli"><a href="#">NEW IN</a>
+                    <div class="sub-menu">
+                        <div class="col">
+                            <div>
+                                <P>Clothing</P>
+                                <P>Curve</P>
+                                <P>Accessories</P>
+                                <P>Best Selling</P>
+                            </div>
+
+                            <img src="https://img.faballey.com/images/newindrpdnnv2.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li ><a href="#" style="color: #fc6486;">SUMMER'22</a></li>
+                <li class="cloth"><a href="#" >CLOTHING</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">DRESSES</a></li>
+                <li><a href="#">LOUNGEWEAR</a></li>
+                <li><a href="#">CURVES</a></li>
+                <li><a href="#">TRENDS</a></li>
+                <li><a href="#">LOOKBOOKS</a></li>
+                <li ><a href="#" style="color: #fc6486;">SALE</a></li>
+                <li><a href="#">DRESSES AT ₹1800</a></li>
+                <li><a href="#">2 TOPS AT ₹999</a></li>
+            </ul>
+        </div>
+      </nav>
+
+    <!-- third header  -->
+    <div class=" thirdheader">
+        <div class="rose"><a>Spring Summer'22</a></div>
+        <div class="darkrose"><a>SALE | UPTO 65% Off </a></div>
+        <div class="rose"><a> Free Shipping On All Orders</a></div>
+    </div>
+</header>
+
+<div id="Box">
+
+<div id="topsection">
+
+<div><h2> DRESSES </h2> </div>
+
+<div class="list-choice">
+    <div class ="list-choice-title"> DRESSES </div>
+    <div class ="list-choice-objects">
+    <label>
+       <input type="radio"/>
+       <span>BODYCON DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>SKATER DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>A-LINE DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>SHIRT DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>SHIFT DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>MAXI DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>WRAP DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>OFF SHOULDER DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>COLD SHOULDER DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>RUFFLE DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+    <span>LITTLE BLACK DRESSES</span> 
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>MINI DRESSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>OFF SHOULDER TOPS</span>
+    </label>
+    </div>
+    </div>
+
+
+<div><h3> JUMPSUITS </h3></div>
+<div> <h3> WORK FROM HOME COLLECTION </h3> </div> 
+<div class="list-choice">
+  <div class ="list-choice-title">LOUNGEWEAR </div>
+<div class ="list-choice-objects">
+<label>
+  <input type="radio"/>
+  <span>COORDINATES  </span>
+</label>
+<label>
+  <input type="radio"/>
+  <span>TOPS</span>
+</label>
+<label>
+  <input type="radio"/>
+  <span>DRESSES</span>
+</label>
+<label>
+  <input type="radio"/>
+  <span>SKIRTS</span>
+</label>
+<label>
+  <input type="radio"/>
+  <span>BOTTOMS</span>
+</label>
+</div>
+</div>
+<div><h3> PARTY WEAR </h3> </div>
+<div><h3> NAB-NOW PIECES </h3></div>  
+<div><h3> SPORTS WEAR </h3></div>
+
+
+<div class="list-choice">
+<div class ="list-choice-title"> SKIRTS </div>
+<div class ="list-choice-objects">
+<label>
+  <input type="radio"/>
+  <span>MINI SKIRTS</span> 
+</label>
+<label>
+  <input type="radio"/>
+  <span>MAXI SKIRTS</span>
+</label>
+<label>
+ <input type="radio"/>
+ <span>MIDI SKIRTS</span>
+</label>
+</div>
+</div> 
+
+<div><h3> JEANS </h3> </div>
+<div><h3> SHORTS </h3> </div> 
+<div class="list-choice">
+<div class ="list-choice-title"> BOTTOMS </div>
+<div class ="list-choice-objects">
+ <label>
+   <input type="radio"/>
+   <span>FORMAL TROUSERS</span> 
+</label>
+<label>
+   <input type="radio"/>
+   <span>LEGGINGS & JEGGINGS</span>
+</label>
+<label>
+  <input type="radio"/>
+  <span>WIDE LEGGED PANTS</span>
+</label>
+</div>
+</div>
+<div><h3> SHRUGS </h3> </div>
+<div><h3> OFFICE WEAR </h3> </div>
+<div class="list-choice">
+<div class ="list-choice-title">WINTER WEAR</div>
+<div class ="list-choice-objects">
+<label>
+   <input type="radio"/>
+   <span>BLAZERS</span>
+</label>
+<label>
+   <input type="radio"/>
+   <span>JACKETS</span>
+</label>
+<label>
+   <input type="radio"/>
+   <span>COATS</span>
+</label>
+<label>
+   <input type="radio"/>
+   <span>SWEATERS & CARDIGANS</span>
+</label>
+<label>
+   <input type="radio"/>
+   <span>HOODIES & SWEATSHIRTS</span> 
+</label>
+</div>
+</div>
+
+
+<div><h3> UNDER 699 </h3> </div>
+<div><h3> UNDER 799 </h3> </div>
+<div> <h3> UNDER 999 </h3></div>
+
+<div class="list-choice">
+    <div class ="list-choice-title"> TOPS </div>
+    <div class ="list-choice-objects">
+    <label>
+       <input type="radio"/>
+       <span>CROP TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>TANK TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>T-SHIRTS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>SHIRTS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>BLOUSES</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>MAXI TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>PEPLUM TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>CAPE TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>WRAP TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>HALTER TOP</span>
+    </label>
+    <label>
+       <input type="radio"/>
+    <span>LACE TOPS</span> 
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>COLD SHOULDER TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>OFF SHOULDER TOPS</span>
+    </label>
+    <label>
+       <input type="radio"/>
+       <span>BELL SLEEVES TOPS</span>
+    </label>
+    </div>
+    </div>
+
+</div>
+
+<div id="container">
+</div>
+</div>
+<div class="bottom">
+  <p>Load More</p>
+     </div>
+
+<footer>
+  <div class="maincenter">
+      <div class="txtcenter">
+          <h1>
+              <span>ONLINE SHOPPING SITE FOR WOMEN’S FASHION - FABALLEY</span>
+          </h1>
+          <div class="ftrtext">
+              <div class="ftrtextscroll">
+                  <p>FabAlley.com is an online fashion store for taste-makers and trend-breakers all over the
+                      country.
+                      When it comes to online shopping for women looking for the latest fashion trends, FabAlley
+                      is
+                      the one-stop destination. Started in 2012, this online fashion store comprises of the
+                      trendiest
+                      tops, hottest dresses, skirts, jackets, shoes, bags, accessories and fashion jewellery for
+                      women
+                      online shopping. Every new season brings fresh and latest fashion for women. And it becomes
+                      important for you to keep up with the current trend. However, FabAlley has all your styling
+                      stress sussed!</p>
+
+                  <p>
+                      Going out for a stroll along the streets? Or getting ready for an important meeting at work?
+                      Or
+                      simply watching Netflix at home, cuddled up with your loved one in bed? Whatever plans you
+                      have,
+                      one common decision you should take in all these cases is what to wear. Women are generally
+                      very
+                      particular about their outfits and latest fashion trends. FabAlley, an online fashion store,
+                      houses a colossal collection of Tops, Dresses, Skirts, Bottoms, Shorts, Blazers and Jackets,
+                      all
+                      bang-on trend and in all sizes, from petite to plus-size.</p>
+
+                  <p>Going to a brick and mortar store and browsing your perfect outfit is very tedious and time
+                      consuming. It is physically impossible to check out all the latest fashion trends for women
+                      from
+                      various brands in the same day. In the fast-moving world, today, no one has this much time!
+                      This
+                      is one of the main reasons that Online Shopping for women is so popular these days. It’s
+                      much
+                      convenient, time-saving and offers a wider variety of surf too. It also lets you compare
+                      prices
+                      across different websites. From Instagram and Facebook to googling and scanning through
+                      several
+                      online fashion store India, the options for browsing are endless. FabAlley is one such
+                      online
+                      fashion store that is a one- stop shop for all your fashion needs, be it ethnic or western
+                      wear,
+                      bags or shoes. The best part being we provide the latest women online shopping trends.</p>
+
+                  <h2>Online Shopping for Women in India</h2>
+
+                  <p>Shopping is no longer an exhausting affair with women online shopping sites offering the
+                      accessibility of fuss-free shopping services, anytime and anywhere. With a larger than life
+                      repertoire to choose from, online shopping sites for women have made everyone’s life much
+                      easier
+                      and convenient. In this fast-paced world, Online Shopping is a boon. Be it branded or
+                      designer
+                      outfits, online shopping caters you the best of both. With services like cash on delivery,
+                      easy
+                      return, exchange & refund, these online stores are a fantastic platform that can create the
+                      best
+                      shopping experiences for people across the globe. Apart from providing the trendiest
+                      apparels
+                      and accessories, these online sites offer products at affordable prices without compromising
+                      on
+                      the quality of the item. Furthermore, services are available round the clock, no matter what
+                      time or day it is.</p>
+
+                  <h2>FABALLEY: One-Stop Fashion Shop</h2>
+
+                  <p>Who doesn’t want to stay trendy? Everyone does. Synonymous with chic and glamorous, Faballey
+                      is
+                      an exclusive fashion online shopping store for women who are rebellious and love quirky and
+                      unconventional styling. Featuring season’s most trending outfits and much-in-fame
+                      accessories in
+                      the realm of fashion, FabAlley is the best online store for people who loves to own
+                      ensembles
+                      that are sexy, hot, cool and fashionable. Tops, Dresses, Skirts, Pants or Denims to name a
+                      few,
+                      Faballey has everything to offer, under one single roof. FabAlley is all about redefining
+                      the
+                      fashion in the chicest way. At FabAlley, you will be spoiled for choice. There is something
+                      fun
+                      and dramatic for every fashion aficionado out there. To make shopping easy and convenient,
+                      Faballey provides various facilities through online payment, Door Step Delivery and Cash on
+                      Delivery. In case you do not like the purchased product or have any kind of size issues, you
+                      can
+                      easily avail our Return, Refund and Exchange facility. Customer satisfaction is our utmost
+                      priority. And to ensure that all the queries and issues are resolved at the earliest, we
+                      have a
+                      customer care team to assist our esteemed customers</p>
+
+                  <p>Going to a brick and mortar store and browsing your perfect outfit is very tedious and time
+                      consuming. It is physically impossible to check out all the latest fashion trends for women
+                      from
+                      various brands in the same day. In the fast-moving world, today, no one has this much time!
+                      This
+                      is one of the main reasons that Online Shopping for women is so popular these days. It’s
+                      much
+                      convenient, time-saving and offers a wider variety of surf too. It also lets you compare
+                      prices
+                      across different websites. From Instagram and Facebook to googling and scanning through
+                      several
+                      online fashion store India, the options for browsing are endless. FabAlley is one such
+                      online
+                      fashion store that is a one- stop shop for all your fashion needs, be it ethnic or western
+                      wear,
+                      bags or shoes. The best part being we provide the latest women online shopping trends.</p>
+
+                  <h2>
+                      BUY WOMEN WEAR ONLINE ON FABALLEY
+                  </h2>
+
+                  <p>Hello, Fashion devotees! It’s time for you to ride high on style with the most fashionable
+                      women’s clothing online store- FabAlley. Check out our stunning range of Dresses that are
+                      trending big time. Whether you’re looking for a Bodycon, Skater, A-line, Shift, Off Shoulder
+                      or Maxi Dresses, we have every type of dresses that is going to make you croon. For those
+                      who are inclined towards gothic and boho styling, we have Summer in Bohemia collection.
+                      Also, explore our vast array of sexy Tank Tops, stylish Shirts, hot blouses for girls,
+                      elegant Ruffled Tops, basics and many more. We are not just restricted to clothing, step up
+                      your fashion quotient with our cool range of accessories. From stylish Bags to beautiful
+                      Scarves, cool Sunglasses to cute Hair Accessories and swanky Jewelry, we unveil the best for
+                      you. In case you are a diehard fan of both ethnic and western styles, FabAlley have got you
+                      covered. Indya is exclusively for girls who loves to wear traditional and ethnic outfits
+                      with a dash of contemporary twist. Enjoy the best of Indo Western wear with FabAlley’s
+                      gorgeous collection of graceful Skirts, Peplums, Crop Tops for women, Tunics, Dresses,
+                      Palazzo et al. Apart from these amazing products, we also have a smart collection of Shoes
+                      for women, which consists of Peep-Toes, Flat Sandals, Lace-up Sandals, Strappy Flat Sandals,
+                      Block Heeled Sandals and Wedge Sandals. Choose yours!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="maincenter">
+      <div class="googleplay">
+          <div>
+              <img src="https://img.faballey.com/images/membership-desktop.png" alt="">
+          </div>
+          <div>
+              <h2>DOWNLOAD THE APP</h2>
+              <div class="footerimg">
+                  <img src="https://static.faballey.com/images/glplay.png?v=11.8">
+                  <img src="https://static.faballey.com/images/appstore.png?v=11.8">
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="faballeycsr">
+      <div class="firstcom">
+          <div class="company">
+              <h2>COMPANY </h2>
+          </div>
+          <div class="companyone">
+              <P>About us </P>
+              <P>Carrers</P>
+              <P>Contact Us</P>
+              <P>FabAlley CSR</P>
+              <P>Our Blog</P>
+          </div>
+
+      </div>
+
+      <div class="help">
+          <div class="helpone">
+              <h2>HELP</h2>
+          </div>
+          <div class="havetwo">
+              <div class="helpone">
+                  <p>Order Status</p>
+                  <p>Returns & Exchange</p>
+                  <p>International Orders</p>
+                  <p>Terms And Conditions</p>
+                  <p>Privacy Policy</p>
+                  <p>Investor Relations</p>
+              </div>
+              <div class="helptwo">
+                  <p>FAQs</p>
+                  <p>Cancellation policy</p>
+                  <p>Shipping Policy</p>
+                  <p>Ordering & Payment</p>
+                  <p>Size Guide</p>
+                  <p>Store Locator</p>
+                  <p>Wholesale Enquiry</p>
+              </div>
+          </div>
+
+      </div>
+      <div class="newsletter">
+          <h2>NEWSLETTER SIGNUP</h2>
+          <div>
+              <input class="input" placeholder="ENTER EMAIL ADDRESS">
+              <button class="btn">SUBSCRIBE</button>
+          </div>
+          <div class="connecticon">
+              <h2>CONNECT WITH US</h2>
+              <div>icons</div>
+          </div>
+      </div>
+  </div>
+
+  <!-- 2nd last box   -->
+
+  <div class="threediv">
+      <div class="head">
+          <div>
+              <h2>IN CASE OF ANY CONCERN CONTACT US</h2>
+          </div>
+          <div class="insidehead">
+              <h2>HEAD OFFICE ADDRESS :</h2>
+              <P>
+                  High Street Essentials Pvt Ltd
+                  <br>
+                  C-11, Sector 7, Noida, UP- 201301, India
+                  <br>
+                  Customer Care: +91-8929987349 / 0120-6850262
+              </P>
+          </div>
+      </div>
+      <div class="return">
+          <h2>RETURN ADDRESS:</h2>
+          <P>High Street Essentials Pvt Ltd
+              <br>
+              C-5, Sector 1, Noida
+              <br>
+              UP- 201301, India
+          </P>
+      </div>
+      <div class="payment">
+          <h2>PAYMENT METHODS</h2>
+          <img src="https://static.faballey.com/images/patmentimg.png?v=11.8" alt="" srcset="">
+      </div>
+  </div>
+
+
+  <div class="secondlast">
+      <h3>POPULAR SEARCH :</h3>
+      <p>New Arrivals | Western Clothing | Tops | Dresses | Skirts | Bottoms | DenimJackets & Blazers | Shrugs |
+          Curve | Accessories | Sale | Party |<br>
+          WearWork | Wear | Vacation | WearCasual | WearCrop | TopsMaxi | TopsOff | Shoulder | TopsCold | Shoulder
+          | TopsRuffled |
+          TopsBell | Sleeve | TopsFloral <br>| TopsMaxi | DressesSkater | DressesMini |
+          DressesOff | Shoulder | DressesCold | Shoulder |
+          Dresses | Floral Dresses | LBD | Jumpsuits | Plus |Size | <br>DressesPlus |Size | TopsWinter |
+          WearLeggings | Jeggings | Women's
+          Loungewear | Wholesale Enquiries</p>
+  </div>
+
+  <div class="copyright">
+      <p>&#169;2022 FabAlley.com. All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+
+</html>
+<script>
+var TopsData = [
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS03635Z/1.jpg",
+name: "Beige Pink Floral Mini Wrap Dress",
+price: "1050",
+strikedoffprice: "₹2100",
+
+},
+{
+image_url:
+"	https://img.faballey.com/images/Product/DRS02839Z/1.jpg",
+name: "Navy Embellished Neck Halter Jumpsuit",
+price: "750",
+strikedoffprice: "₹2500",
+
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS03847Z/1.jpg",
+name: " Blue Grey Floral Belted Midi Dress",
+price: "1200",
+strikedoffprice: "₹2400",
+
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS03132Z/1.jpg",
+name: "Pink Ditsy Floral Elasticated Sleeve Wrap",
+price: "750",
+strikedoffprice: "₹1500",
+
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS04183Z/1.jpg",
+name: "Teal Cut Out Back Maxi Dress",
+price: "1100",
+strikedoffprice: "₹2200",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS03950Z/1.jpg",
+name: " Green Collared Button Down Dress with Tan Belt",
+price: "1050",
+strikedoffprice: "₹2100",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS04187Z/1.jpg",
+name: "Lilac Swiss Dot Pleated Dress with Tan Belt",
+price: "1050",
+strikedoffprice: "₹2100",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/DRS03452Z/1.jpg ",
+name: "Navy Floral High Neck Tiered Midi Dress",
+price: "750",
+strikedoffprice: "₹2450",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04138Z/1.jpg",
+name: "Black Embellished Neck Layered Dress",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05594Z/1.jpg",
+name: "Blue Cold Shoulder Halter Embellished Dress",
+price: "699",
+strikedoffprice: "₹999",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04986Z/1.jpg ",
+name: "Hot Pink Schiffli Puff Sleeve Top",
+price: "825",
+strikedoffprice: "₹1650",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04866Z/1.jpg",
+name: "Pink Floral Ruffled Halter Top",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05616Z/1.jpg",
+name: "Wine Mesh Full Sleeve Blouse",
+price: "750",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05278Z/1.jpg",
+name: "Black Floral Wrap Peplum Top",
+price: "750",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05164Z/1.jpg",
+name: " Blush Pink Neck Tie Lace Top ",
+price: "900",
+strikedoffprice: "₹1800",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05453Z/1.jpg",
+name: "Black Floral Pussy Bow Blouse",
+price: "1600",
+strikedoffprice: "₹2100",
+
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05018Z/1.jpg",
+name: "Green Schiffli Ruffle Sleeve Top",
+price: "825",
+strikedoffprice: "₹1650",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05300Z/1.jpg ",
+name: "Maroon Lace Ruched Sleeve Top ",
+price: "800",
+strikedoffprice: "₹1600",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP01574A/1.jpg",
+name: " Military Mad Henley T-Shirt",
+price: "425",
+strikedoffprice: "₹850",
+},
+{
+image_url:
+" https://img.faballey.com/images/Product/TOP04255Z/1.jpg ",
+name: " Pink Gingham Pussy Bow Top",
+price: "750",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+" https://img.faballey.com/images/Product/TOP05427Z/1.jpg",
+name: "Wine Puffed Sleeve Belted Blouse",
+price: "800",
+strikedoffprice: "₹1600",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04259Z/1.jpg ",
+name: " Yellow Gingham Belted Top ",
+price: "450",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05745Z/1.jpg ",
+name: "White Satin Strappy Textured Top",
+price: "600",
+strikedoffprice: "₹1200",
+},
+{
+image_url:
+" https://img.faballey.com/images/Product/TOP05527Z/1.jpg ",
+name: "Maroon Ruched Sweetheart Neck Knit Top",
+price: "600",
+strikedoffprice: "₹1200",
+},
+{
+image_url:
+" https://img.faballey.com/images/Product/TOP05272Z/1.jpg ",
+name: "Dusty Pink Front Ruched Peplum Top",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04997Z/1.jpg ",
+name: "Mustard Blouson Sleeve Buttoned Top ",
+price: "1500",
+strikedoffprice: "₹750",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05111Z/1.jpg",
+name: " Blue Dotted Smocked Sleeves Top ",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04156Z/1.jpg",
+name: "Pink Striped Belted Wrap Top",
+price: "850",
+strikedoffprice: "₹1700",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04947Z/1.jpg",
+name: "Red Striped Cuffed Detail Blouse",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05181Z/1.jpg",
+name: "Beige Pink Smocked Puff Sleeve Crop Top",
+price: "750",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04142Z/1.jpg",
+name: "Navy Bow Shoulder",
+price: "750",
+strikedoffprice: "₹1500",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05375Z/1.jpg",
+name: "Slate Blue Neck Tie Up Blouse",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05249Z/1.jpg",
+name: "White Strappy Schiffli Peplum Top",
+price: "700",
+strikedoffprice: "₹1400",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP04031Z/1.jpg",
+name: "Blue Bell Sleeve Jacquard Wrap Top",
+price: "510",
+strikedoffprice: "₹1700",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05426Z/1.jpg ",
+name: "Black Puffed Sleeve Belted Blouse",
+price: "800",
+strikedoffprice: "₹1600",
+},
+{
+image_url:
+"https://img.faballey.com/images/Product/TOP05703Z/1.jpg",
+name: "Pink Tie Dye Smocked Sleeve Layered Top",
+price: "1400",
+strikedoffprice: "₹2500",
+},
+];
+
+
+var cartData = JSON.parse(localStorage.getItem("cart")) || []
+
+TopsData.map(function (elem) {
+var box = document.createElement("div");
+
+var img = document.createElement("img");
+img.src = elem.image_url;
+
+var colour= elem.colour
+
+var name = document.createElement("p");
+name.textContent = elem.name;
+
+var price = document.createElement("h4");
+price.innerText = elem.price;
+
+
+var strikedoffprice = document.createElement("strike");
+strikedoffprice.innerText = elem.strikedoffprice;
+
+var cart = document.createElement("button")
+cart.innerText = "Add To Bag"
+cart.addEventListener("click",function(){
+cartclick(elem)
+})
+
+price.append(strikedoffprice)
+
+box.append(img, name, price, cart);
+
+document.querySelector("#container").append(box);
+});
+
+var arr=JSON.parse(localStorage.getItem("completedbag")) || []
+function cartclick(elem){
+arr.push(elem)
+localStorage.setItem("completedbag",JSON.stringify(arr))
+window.location.href="cart.html"
+}
+
+</script>
