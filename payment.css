@@ -212,3 +212,18 @@ margin-top: 20px;
     justify-content: space-around;
     color: #413f3f;
 }
+
+.bigthree{
+    border: 1px solid black;
+    width: 25%;
+}
+.bigthree div{
+    border: 1px solid #ccc;
+}
+.bigthreefirst{
+    padding: 10px;
+}
+.bigthreefirst p{
+    /* border: 1px solid #ccc; */
+    margin-top: 8px;
+}
