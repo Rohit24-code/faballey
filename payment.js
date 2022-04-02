@@ -1,5 +1,7 @@
 var payment = JSON.parse(localStorage.getItem("address")) ;
 // console.log("payment");
+
+
 payment.map(function (elem) {
 
     var addDiv = document.querySelector(".bigthree");
@@ -30,10 +32,10 @@ payment.map(function (elem) {
 
 
     addDiv.append(newdiv);
+    
 
 });
 var cartdata = JSON.parse(localStorage.getItem("completedbag"))
-
 var total = cartdata.reduce(function(sum,elem,index,arr){
     return sum+Number(elem.price);
  },0);
