@@ -387,6 +387,8 @@ element.style {
     width: 100%;
     float: left;
     padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .prizeDetail p {
     float: left;
@@ -404,6 +406,8 @@ element.style {
     margin-top: 8px;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: space-between;
 }
 .orderTotal p {
     float: left;
@@ -668,68 +672,15 @@ element.style {
         </div>
     </div>
     <div class="formbtn" dataval="FAB0808080808LLY">
-        <input class="dfaddrs" type="submit" value="Deliver to this address" data-add-id="new" id="addnewAdd" enabled="true"> 
+        <input onclick="payment.html" class="dfaddrs" type="submit" value="Deliver to this address" data-add-id="new" id="addnewAdd" enabled="true"> 
+       
         <input type="hidden" name="hastoken" id="hastoken">
     </div>
 </form>
 </div>
 </div>
 </div>
-<div class="bagRightcntr">
-    <div class="bagRightitle">
-        <h3>Product Details</h3>
-        <a href="cart.html"> Edit Bag</a>
-    </div>
-    <div class="shpItemsMain">
-        <div class="shpItems" data-var-qnty="1" data-style="BOT00593" data-name="Wine Waist Zip Jeggings " data-currency="INR" data-variant="BOT00593B" data-category="Clothing/Bottoms/Leggings &amp; Jeggings" data-price="1050.00" data-brand="faballey">
-            <img src="https://img.faballey.com/images/Product/BOT00593A/1.jpg"> 
-            <span>Wine Waist Zip Jeggings <br> Sku : BOT00593B<br> Qty : 1 <span class="shipItemPrice"> Price : <i class="fal fa-rupee-sign">
 
-            </i> 
-            1050 
-        </span>
-     </span>
-    </div>
-</div>
-<h3>Price Details</h3>
-<div class="optionBox" style="width:100%;box-sizing:border-box">
-    <div class="przdlmain" style="width:100%">
-        <div class="prizeDetailbox">
-            <div class="prizeDetail">
-        <p>Sub Total</p>
-        <span>
-    <i class="fal fa-rupee-sign">
-
-    </i> 1050</span>
-</div>
-<div class="prizeDetail" id="bill-shippment-charge" style="display:none">
-    <p>Shipping</p>
-    <span>
-        <i class="fal fa-rupee-sign">
-
-        </i> 0</span>
-    </div>
-    <div class="prizeDetail">
-        <p>Donation</p>
-        <span>
-             <i class="fal fa-rupee-sign">
-
-             </i> 10</span>
-            </div>
-            <div class="orderTotal">
-                <p>Total</p><span> 
-            <i class="fal fa-rupee-sign" style="float:none">
-            </i> 
-            1060 
-        </span>
-    </div>
-</div>
-</div>
-</div>
-<p class="shipdays">
-    Estimated Delivery Time<br><br> India : 4-6 business days.<br> International: 7-12 business days.
-</p>
-</div>
 <div class="cl">
 
 </div>
@@ -740,3 +691,4 @@ element.style {
 </div>
 </body>
 </html>
+<script src="shipping.js"></script>
