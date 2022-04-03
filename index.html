@@ -10,6 +10,113 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .popup{
+        position:absolute;
+        margin-top: 150px;
+        top:-150%;
+        left:50%;
+        opacity: 0;
+        transform:translate(-50%,-50%) scale(1.25);
+        width:480px;
+        padding:20px 30px;
+        background: #fff;
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+        border-radius: 10px;
+        transition: top 0ms ease-in-out 200ms,
+                    opacity 200ms ease-in-out 0ms,
+                    transform 20ms ease-in-out 0ms;
+    }
+    .popup.active{
+        top:50%;
+        opacity: 1;
+        transform:translate(-50%,-50%) scale(1.25);
+        transition: top 0ms ease-in-out 0ms,
+                    opacity 200ms ease-in-out 0ms,
+                    transform 20ms ease-in-out 0ms;;
+    }
+    .popup .close-btn{
+        position:absolute;
+        top: 10px;
+        right:10px;
+        width:15px;
+        height:15px;
+        background: #888; 
+        color:#eee;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    #btn{
+        width: 100%;
+        background: #fc6486;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px 0;
+        text-transform: uppercase;
+        margin-top: 30px;
+        display: block;
+        cursor: pointer;
+    }
+    #email{
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        color: #6d6d6d;
+        margin-top: 10px;
+        
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    h5 {
+        position: relative;
+        background: #fbfbfb;
+        padding: 0 5px;
+        font-weight: 500;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      h5:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background: black;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+      h5:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background: black;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+      .other{
+        width: 200px;
+        cursor: pointer;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    p{
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+</style>
 
 <body>
     <header>
@@ -25,7 +132,9 @@
             <div class="rightside">
                 <div><a>Track Order</a></div>
                 <div><a>Gift Card</a></div>
-                <div class="login"><a herf="signup.html">Login</a></div>
+                <div class="center">
+                    <button id="show-login">Login</button>
+                </div>
                 <div><a href="singup.html">Sign Up</a></div>
 
                 <!-- <div class="bag"> -->
@@ -784,8 +893,38 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"> </script>
+   
+    <div class="popup">
+        <h1>LOGIN OR SIGNUP</h1>
+        <b>for a quicker checkout</b>
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <input type="text"id="email" placeholder="Enter Mobile/Email">
+        </div>
+        <div class="form-element">
+            <button id="btn">continue</button>
+        </div>
+       
+           <h5>Or Continue with</h5>
+       <a onclick="Facebook()"><img src="https://www.faballey.com/images/loginfb.png" alt=facebook/ class="other"></a>
+        <a onclik="google()"><img src="https://www.faballey.com/images/logingogl.png" alt=google class="other"></a>
+        <p>skip</p>
+ 
+    </div>
 
 
 </body>
+<script>
+    document.querySelector("#show-login").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+    })
+    document.querySelector(".popup .close-btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+    })
+    document.querySelector(".popup #btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+    })
+    
+</script>
 
 </html>
