@@ -479,7 +479,9 @@ ul {
 .phototwo img {
     width: 100%;
 }
-
+.images div{
+    cursor: pointer;
+}
 /* recommend  */
 .recommend {
     border-bottom: 1px solid rgb(202, 197, 197);
